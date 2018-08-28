@@ -1,109 +1,329 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Talk Template
+# Intro to HTML
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
-
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+Our first official forray in to the world of web development will be to learn
+HTML. There are three components to every website: HTML, CSS, and JavaScript.
+Each "ingredient" has a specific function, for HTML it's the content and
+structure of the webpage.
 
 ## Prerequisites
 
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
+* The WDI prework
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Write objectives that focus on demonstrating knowledge.
--   Write learning objectives that begin with an [imperative
-    verb](https://en.wikipedia.org/wiki/Imperative_mood).
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+* Write html tags, including with attributes
+* Build out the skeleton for a webpage using the HTML5 boilerplate
+* Use a variety of semantic HTML tags
+* Convert a design/mock up into a wireframe, then into an HTML document
 
 ## Preparation
 
-1.  Fork and clone this repository.
- [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
-1.  Install dependencies with `npm install`.
+1. Fork and clone this repository.
+1. Create a new branch, `training`, for your work.
+1. Checkout to the `training` branch.
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
+## Introduction
 
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
+There are three "ingredients" to every website: HTML, CSS, and JavaScript:
 
-## Leading Topic Heading
+| "Ingredient" | Purpose |
+| --- | --- |
+| HTML | Content & Structure |
+| CSS | Styling and Layout |
+| JavaScript | Interactivity |
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
+We're learning HTML in this lesson, which we use for the content and structure
+of a Webpage.
 
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
+HTML is actually the only *required* ingredient and it used to be the case (back
+in the very early days of the web) that web pages were only made of HTML. That's
+because the original purpose of the world wide web was for sharing scientific
+research and reports amongst academics. They had the content of their reports
+and needed a way to annotate it so that it would have some styling.
 
-## Demo: Write a Demo
+The purpose of HTML is very functional, we want to annotate text to give that
+text meaning. You can see what we mean by comparing a document written in plain
+text with the same document written in HTML:
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+![Comparing plain text with HTML](assets/text-v-html.png)
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+In the plain text example (on the left), it's hard to determine the hierarchy of
+the information. With just a touch of HTML, we can fix that problem and give our
+content some structure.
 
-## Code-Along: Write an Code-Along
+So when someone says HTML is the "content and structure" of a webpage, that's
+what they mean!
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+## Review: HTML tags and attributes
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
+The following should all be review from the prework. That's okay though, because
+learning is iterative (meaning each time you review something, you learn
+a little more and you learn it a little deeper).
 
-## Lab: Write a Lab
+### Anatomy of a Tag
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
+From the prework, we know that an HTML tag looks like this:
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
+```html
+<p>Content</p>
+```
 
-Labs correspond to the "You do" portion of scaffolding from consultant
-training.
+**Review Questions:**
+
+* Which part of this code snippet is the tag?
+* Which part of this code snippet is the content?
+* What does this tag mean? (i.e. what type of element is this?)
+
+#### Self-closing Tags
+
+The tag in the snippet above has both an opening and a closing tag - a tag that
+marks the beginning of some content and a *separate tag* that marks the end of
+that content. In this case, the tags mark the begging and ending of a paragraph.
+As we learned in the prework, not all elements are made with an opening and
+a closing tag; some elements are made with *self-closing* tags:
+
+```html
+<img src="cat.gif" alt="A funny cat gif" />
+```
+
+**Review Questions:**
+
+* Is this tag self-closing? When looking at the snippet, how do we know?
+* What is `src="cat.gif"` in relation to the tag? Is this unique to self-closing
+    tags?
+
+#### Attributes
+
+The code snippet above includes two HTML attributes: the `src` and `alt`.
+Attributes are for data that describes the tag. So for an `img` tag, the `src`
+attributes tells the browser the source of the image we want to display.
+Attributes are not unique to self closing tags! That is, both self-closing and
+non-self-closing tags can have attributes:
+
+```html
+<a href="http://www.google.com">Google</a>
+```
+
+**Review Questions:**
+
+* What type of element is this?
+* What is the purpose of `href="http://www.google.com"`?
+* Can you see a pattern in how tags and attributes work?
+
+#### Common Tags
+
+There are 113 HTML tags in the HTML specification - that's a lot! Luckily,
+you'll only use a handful of them in your day-to-day. Here are a few of those:
+
+##### Text Wrappers:
+
+* `<p>`
+* `<h1>` to `<h6>`
+* `<blockquote>`
+* `<li>`
+
+##### Semantic Inline Text-Wrappers:
+
+* `<a>`
+* `<span>`
+* `<em>`
+* `<strong>`
+
+
+##### Semantic Block Containers:
+
+* `<header>`
+* `<footer>`
+* `<main>`
+* `<section>`
+* `<article>`
+* `<nav>`
+* `<aside>`
+* `<div>`
+
+##### List Containers:
+
+* `<ul>`
+* `<ol>`
+* `<dl>`
+
+**Review Questions:**
+
+> Use these questions for each section above
+
+* What would you suppose this element does?
+* Why is it called what it is?
+* What meaning does this tag have? Similarly, how might you use it?
+* What is the difference between a block and an inline element?
+
+While there are over 100 HTML tags, you only need a handfull to build a semantic
+HTML page. Don't worry about memorizing any of these (unless you want to).
+Instead, learn them as you go!
+
+This [HTML Reference](https://htmlreference.io/) is a really handy page
+describing all 113 HTML tags, with examples! We highly recommend bookmarking it
+and referring back to it from time to time.
+
+## HTML Pages
+
+Let's move away from talking about single HTML tags and elements and turn to
+discussing the HTML page as a whole.
+
+A web page is defined in an HTML document, ending with the extension `.html`.
+But we need more than just the extension in an HTML document! We need a tag to
+let the browser know that our document is an HTML document, we need some meta
+information to describe our document, and we need to let the browser know where
+the body of our document is.
+
+All together, that looks like this:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>This is the title</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+```
+
+**Review Questions:**
+
+<details>
+  <summary>Does this look familiar, from the prework?<summary>
+
+It should! But if it doesn't, that's alright. Know that this is the
+boilerplate for just about every HTML document. Read more about it [here](http://htmlshell.com/)
+</details>
+
+<details>
+  <summary>What does `<!DOCTYPE html>` do?<summary>
+
+`<!DOCTYPE html>` declares that the document is an HTML document. This is
+largely vestigial but necessary and not worth worrying about at the moment
+beyond knowing it is necessary.
+</details>
+
+<details>
+  <summary>What is the `<html>` tag for?<summary>
+
+The next line opens the top level element, `html`, which represents the entire
+document. This is the only top level element and spans the whole document. The
+closing `html` tag should be the last line of the page.
+</details>
+
+<details>
+  <summary>What information goes inside of the `<head>` tag? What about the `<body>` tag?<summary>
+
+The `head` element holds metadata about the document; metadata meaning extra
+information about the document beyond the content of the document.
+
+One required piece of metadata is the `title` element. Every page is required to
+have a title; without one the HTML document is invalid. The title element
+defines what shows up in the browser window, what the page is called when added
+to favorites/bookmarks, and what the page is titled in search-engine results.
+
+The `meta` element declares that the charset or set of characters used in this
+document is `utf-8` which includes most characters from all known human
+languages.  This is not required but can avoid some problems you might run into
+if you use special characters.
+
+The `body` element is for the contents of our document. We're going to write our
+own HTML between the opening and closing `body` tag.
+
+</details>
+
+## Nesting Tags to Build Webpages
+
+So we've discussed tags in isolation and we've discussed the overall webpage as
+a whole. How do the two come together to make a webpage?
+
+We can nest tags inside of each other to create a full webpage:
+
+```html
+<section>
+  <p>
+    Something about news:
+    <a href="http://www.cnn.com">CNN</a>
+  </p>
+</section>
+```
+
+* What elements are in the snippet above?
+* What are we describing with HTML?
+
+## Working with a Mock (We Do)
+
+To see the HTML elements we've learned in action, we're going to build out the
+HTML for a common piece of a webpage: the header navigation.
+
+![Nav bar mock](assets/nav-bar.png)
+
+The image above is a mock-up, an image of a website that a designer would give
+us to show how a website should be built and styled. When we get a mock-up from
+a designer, our job is to break it up into different parts and translate the
+design, first into HTML, then into CSS.
+
+### Wireframe the Mock
+
+> On the whiteboard, let's create a wireframe for the mock-up.
+
+### Outline our Wireframe
+
+> Once we have the wireframe, what HTML elements should we use for the different
+> parts of our wireframe?
+
+### Wireframe to HTML
+
+In your `sandbox`, create a new folder called `nav_bar_exercise`. Create an
+`index.html` file in your new folder and open it in VS Code.
+
+We're going to follow the following steps:
+
+1. Build out the HTML skeleton we described above
+1. Inside the `body` tag, build out the navigation bar that we wireframed and
+   outlined on the whiteboard.
+
+> Style the navbar on your own! It's great practice!
+
+## Mock -> Wireframe -> HTML (You Do)
+
+Here's a mock-up for another common element you'll see on webpages, called card:
+
+![Card UI Element](assets/card.png)
+
+Working on your own or in a pair, work through the same steps from above:
+
+1. Create a wireframe of the card
+1. Create an outline for our HTML from your wireframe
+1. Create a new folder in your `sandbox` with an `index.html` file in it
+1. Build out the skeleton HTML inside `index.html`
+1. Fill in the `body` element with the HTML for your card
+
+## Closing
+
+We covered the common HTML tags you'll use as a web developer, but we were
+really focusing on a separate skill: using HTML to build a webpage, translating
+a mock for a webpage to an HTML document. This is an essential skill for web
+developers! Now that we've practiced, we can start styling it.
 
 ## Additional Resources
 
--   Any useful links should be included in the talk material where the link is
-    first referenced.
--   Additional links for further study or exploration are appropriate in this
-    section.
--   Links to important parts of documentation not covered during the talk, or
-    tools tangentially used but not part of the focus of the talk, are also
-    appropriate.
+* [Internetting is Hard](https://internetingishard.com/)
+* [About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
+* [W3 School HTML Tutorial](https://www.w3schools.com/html/)
+* [MDN Web Docs: Learning
+    HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 
 ## [License](LICENSE)
 
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
 1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+alternative licensing, please contact legal@ga.co.
