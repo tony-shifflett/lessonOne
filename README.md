@@ -199,44 +199,44 @@ All together, that looks like this:
 <details>
   <summary>Does this look familiar, from the prework?<summary>
 
-It should! But if it doesn't, that's alright. Know that this is the
-boilerplate for just about every HTML document. Read more about it [here](http://htmlshell.com/)
+  It should! But if it doesn't, that's alright. Know that this is the
+  boilerplate for just about every HTML document. Read more about it <a href="http://htmlshell.com/">here</a>
 </details>
 
 <details>
-  <summary>What does `<!DOCTYPE html>` do?<summary>
+  <summary>What does <code><!DOCTYPE html></code> do?<summary>
 
-`<!DOCTYPE html>` declares that the document is an HTML document. This is
+<code><!DOCTYPE html></code> declares that the document is an HTML document. This is
 largely vestigial but necessary and not worth worrying about at the moment
 beyond knowing it is necessary.
 </details>
 
 <details>
-  <summary>What is the `<html>` tag for?<summary>
+  <summary>What is the <code><html></code> tag for?<summary>
 
-The next line opens the top level element, `html`, which represents the entire
+The next line opens the top level element, <code>html</code>, which represents the entire
 document. This is the only top level element and spans the whole document. The
-closing `html` tag should be the last line of the page.
+closing <code>html</code> tag should be the last line of the page.
 </details>
 
 <details>
-  <summary>What information goes inside of the `<head>` tag? What about the `<body>` tag?<summary>
+  <summary>What information goes inside of the <code>head</code> tag? What about the <code>body<code> tag?<summary>
 
-The `head` element holds metadata about the document; metadata meaning extra
+The <code>head</code> element holds metadata about the document; metadata meaning extra
 information about the document beyond the content of the document.
 
-One required piece of metadata is the `title` element. Every page is required to
+One required piece of metadata is the <code>title</code> element. Every page is required to
 have a title; without one the HTML document is invalid. The title element
 defines what shows up in the browser window, what the page is called when added
 to favorites/bookmarks, and what the page is titled in search-engine results.
 
-The `meta` element declares that the charset or set of characters used in this
-document is `utf-8` which includes most characters from all known human
+The <code>meta</code> element declares that the charset or set of characters used in this
+document is <code>utf-8</code> which includes most characters from all known human
 languages.  This is not required but can avoid some problems you might run into
 if you use special characters.
 
-The `body` element is for the contents of our document. We're going to write our
-own HTML between the opening and closing `body` tag.
+The <code>body</code> element is for the contents of our document. We're going to write our
+own HTML between the opening and closing <code>body</code> tag.
 
 </details>
 
