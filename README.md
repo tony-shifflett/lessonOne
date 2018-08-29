@@ -262,50 +262,15 @@ We can nest tags inside of each other to create a full webpage:
 ## Working with a Mock (We Do)
 
 To see the HTML elements we've learned in action, we're going to build out the
-HTML for a common piece of a webpage: the header navigation.
+HTML for a common piece of a webpage: a header navigation.
 
-![Nav bar mock](assets/nav-bar.png)
-
-The image above is a mock-up, an image of a website that a designer would give
-us to show how a website should be built and styled. When we get a mock-up from
-a designer, our job is to break it up into different parts and translate the
-design, first into HTML, then into CSS.
-
-### Wireframe the Mock
-
-> On the whiteboard, let's create a wireframe for the mock-up.
-
-### Outline our Wireframe
-
-> Once we have the wireframe, what HTML elements should we use for the different
-> parts of our wireframe?
-
-### Wireframe to HTML
-
-In your `sandbox`, create a new folder called `nav_bar_exercise`. Create an
-`index.html` file in your new folder and open it in VS Code.
-
-We're going to follow the following steps:
-
-1. Build out the HTML skeleton we described above
-1. Inside the `body` tag, build out the navigation bar that we wireframed and
-   outlined on the whiteboard.
-
-> Style the navbar on your own! It's great practice!
+The exercise we're going to work through together is [in this repository](https://git.generalassemb.ly/dc-wdi-fundamentals/nav-bar)
 
 ## Mock -> Wireframe -> HTML (You Do)
 
-Here's a mock-up for another common element you'll see on webpages, called card:
+The designer who made the navigation bar was so impressed with your work that they want you to build something else for them.
 
-![Card UI Element](assets/card.png)
-
-Working on your own or in a pair, work through the same steps from above:
-
-1. Create a wireframe of the card
-1. Create an outline for our HTML from your wireframe
-1. Create a new folder in your `sandbox` with an `index.html` file in it
-1. Build out the skeleton HTML inside `index.html`
-1. Fill in the `body` element with the HTML for your card
+Work through [this exercise](https://git.generalassemb.ly/dc-wdi-fundamentals/html-css-card-element) on your own to practice the skills we worked on in the previous exercise.
 
 ## Closing
 
