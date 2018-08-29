@@ -206,7 +206,7 @@ All together, that looks like this:
 <details>
   <summary>What does <code>!DOCTYPE html</code> do?</summary>
 
-<code><!DOCTYPE html></code> declares that the document is an HTML document. This is
+<code>!DOCTYPE html</code> declares that the document is an HTML document. This is
 largely vestigial but necessary and not worth worrying about at the moment
 beyond knowing it is necessary.
 </details>
