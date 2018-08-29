@@ -204,7 +204,7 @@ All together, that looks like this:
 </details>
 
 <details>
-  <summary>What does <code><!DOCTYPE html></code> do?</summary>
+  <summary>What does <code>!DOCTYPE html</code> do?</summary>
 
 <code><!DOCTYPE html></code> declares that the document is an HTML document. This is
 largely vestigial but necessary and not worth worrying about at the moment
@@ -212,7 +212,7 @@ beyond knowing it is necessary.
 </details>
 
 <details>
-  <summary>What is the <code><html></code> tag for?</summary>
+  <summary>What is the <code>html</code> tag for?</summary>
 
 The next line opens the top level element, <code>html</code>, which represents the entire
 document. This is the only top level element and spans the whole document. The
@@ -220,7 +220,7 @@ closing <code>html</code> tag should be the last line of the page.
 </details>
 
 <details>
-  <summary>What information goes inside of the <code>head</code> tag? What about the <code>body<code> tag?</summary>
+  <summary>What information goes inside of the <code>head</code> tag? What about the <code>body</code> tag?</summary>
 
 The <code>head</code> element holds metadata about the document; metadata meaning extra
 information about the document beyond the content of the document.
