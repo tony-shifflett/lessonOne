@@ -15,7 +15,7 @@ structure of the webpage.
 
 By the end of this, developers should be able to:
 
-* Write html tags, including with attributes
+* Write html tags, including writing tags with attributes
 * Build out the skeleton for a webpage using the HTML5 boilerplate
 * Use a variety of semantic HTML tags
 * Convert a design/mock up into a wireframe, then into an HTML document
