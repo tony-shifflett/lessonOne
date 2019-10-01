@@ -259,14 +259,14 @@ We can nest tags inside of each other to create a full webpage:
 * What elements are in the snippet above?
 * What are we describing with HTML?
 
-## Working with a Mock (We Do)
+## I Do: Working with a Mock
 
 To see the HTML elements we've learned in action, we're going to build out the
 HTML for a common piece of a webpage: a header navigation.
 
 The exercise we're going to work through together is [in this repository](https://git.generalassemb.ly/dc-wdi-fundamentals/nav-bar)
 
-## Mock -> Wireframe -> HTML (You Do)
+## You Do: Mock -> Wireframe -> HTML
 
 The designer who made the navigation bar was so impressed with your work that they want you to build something else for them.
 
