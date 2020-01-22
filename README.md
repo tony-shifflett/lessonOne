@@ -20,12 +20,6 @@ By the end of this, developers should be able to:
 * Use a variety of semantic HTML tags
 * Convert a design/mock up into a wireframe, then into an HTML document
 
-## Preparation
-
-1. Fork and clone this repository.
-1. Create a new branch, `training`, for your work.
-1. Checkout to the `training` branch.
-
 ## Introduction
 
 There are three "ingredients" to every website: HTML, CSS, and JavaScript:
@@ -160,7 +154,7 @@ you'll only use a handful of them in your day-to-day. Here are a few of those:
 * What meaning does this tag have? Similarly, how might you use it?
 * What is the difference between a block and an inline element?
 
-While there are over 100 HTML tags, you only need a handfull to build a semantic
+While there are over 100 HTML tags, you only need a handful to build a semantic
 HTML page. Don't worry about memorizing any of these (unless you want to).
 Instead, learn them as you go!
 
@@ -200,43 +194,50 @@ All together, that looks like this:
   <summary>Does this look familiar, from the prework?</summary>
 
   It should! But if it doesn't, that's alright. Know that this is the
-  boilerplate for just about every HTML document. Read more about it <a href="http://htmlshell.com/">here</a>
+  boilerplate for just about every HTML document. Read more about it <a
+  href="http://htmlshell.com/">here</a>
+
 </details>
 
 <details>
   <summary>What does <code>!DOCTYPE html</code> do?</summary>
 
-<code>!DOCTYPE html</code> declares that the document is an HTML document. This is
-largely vestigial but necessary and not worth worrying about at the moment
+<code>!DOCTYPE html</code> declares that the document is an HTML document. This
+is largely vestigial but necessary and not worth worrying about at the moment
 beyond knowing it is necessary.
+
 </details>
 
 <details>
   <summary>What is the <code>html</code> tag for?</summary>
 
-The next line opens the top level element, <code>html</code>, which represents the entire
-document. This is the only top level element and spans the whole document. The
-closing <code>html</code> tag should be the last line of the page.
+The next line opens the top level element, <code>html</code>, which represents
+the entire document. This is the only top level element and spans the whole
+document. The closing <code>html</code> tag should be the last line of the page.
+
 </details>
 
 <details>
-  <summary>What information goes inside of the <code>head</code> tag? What about the <code>body</code> tag?</summary>
 
-The <code>head</code> element holds metadata about the document; metadata meaning extra
-information about the document beyond the content of the document.
+  <summary>What information goes inside of the <code>head</code> tag? What about
+  the <code>body</code> tag?</summary>
 
-One required piece of metadata is the <code>title</code> element. Every page is required to
-have a title; without one the HTML document is invalid. The title element
-defines what shows up in the browser window, what the page is called when added
-to favorites/bookmarks, and what the page is titled in search-engine results.
+The <code>head</code> element holds metadata about the document; metadata
+meaning extra information about the document beyond the content of the document.
 
-The <code>meta</code> element declares that the charset or set of characters used in this
-document is <code>utf-8</code> which includes most characters from all known human
-languages.  This is not required but can avoid some problems you might run into
-if you use special characters.
+One required piece of metadata is the <code>title</code> element. Every page is
+required to have a title; without one the HTML document is invalid. The title
+element defines what shows up in the browser window, what the page is called
+when added to favorites/bookmarks, and what the page is titled in search-engine
+results.
 
-The <code>body</code> element is for the contents of our document. We're going to write our
-own HTML between the opening and closing <code>body</code> tag.
+The <code>meta</code> element declares that the charset or set of characters
+used in this document is <code>utf-8</code> which includes most characters from
+all known human languages.  This is not required but can avoid some problems you
+might run into if you use special characters.
+
+The <code>body</code> element is for the contents of our document. We're going
+to write our own HTML between the opening and closing <code>body</code> tag.
 
 </details>
 
@@ -264,7 +265,8 @@ We can nest tags inside of each other to create a full webpage:
 To see the HTML elements we've learned in action, we're going to build out the
 HTML for a common piece of a webpage: a header navigation.
 
-The exercise we're going to work through together is [in this repository](https://git.generalassemb.ly/dc-wdi-fundamentals/nav-bar)
+The exercise we're going to work through together is [in this
+repository](https://git.generalassemb.ly/dc-wdi-fundamentals/nav-bar)
 
 ## You Do: Mock -> Wireframe -> HTML
 
