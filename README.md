@@ -22,7 +22,7 @@ By the end of this you should be able to:
 
 ## Introduction
 
-There are three "ingredients" to every website: HTML, CSS, and JavaScript:
+There are three `ingredients` to every website: HTML, CSS, and JavaScript:
 
 | Ingredient | Purpose             |
 | ---------- | ------------------- |
@@ -30,11 +30,11 @@ There are three "ingredients" to every website: HTML, CSS, and JavaScript:
 | CSS        | Styling and Layout  |
 | JavaScript | Interactivity       |
 
-For this lecture we will focus only on HTML and CSS.
+The focus of this lecture will be on the first two: HTML and CSS.
 
-### HTML for Content and Structure
+### Intro To HTML and CSS
 
-#### Intro To HTML
+#### HTML for Content and Structure
 
 The purpose of HTML is very functional, we want to annotate text to give that
 text meaning. You can see what we mean by comparing a document containing plain content that outlines a GA Press Release and then compare that with the same document written in HTML:
@@ -56,17 +56,17 @@ So when someone says HTML is the `content and structure` of a webpage, that's wh
 
 #### CSS for Styling
 
-Now take that same content and add some css you can make it come to life. The following are versions of the press release created like students just like yourself.
+Now take that same content, add some css and you can make it come to life. The following versions the press release were created by students just like yourself.
 
-As we can see the same images are used to add help convey how GA is a company about education and the GA logo itself has been used in several placed to also remind the reader this is a GA press release.
+As we can see the same theme images are used that are used to convey GA is a company about education. Also the GA logo itself has been used in several place to remind the reader this is a GA press release.
 
 <img src="https://i.imgur.com/XFdK0wr.png" width=500/>
 
 ### Investigating Web Sites Using Chrome Dev Tools
 
-One of the main tools that front end developers use to view web sites in order to see the structure and css behind them is Chrome Developer Tools or DevTools for short.
+One of the main tools that front end developers use to investigate web sites in order to inspect their structure and css is Chrome Developer Tools or DevTools for short.
 
-Here are some of the things we will use DevTools for:
+Although DevTools provides a list of tools to work with we will mainly use ti for the following:  
 
 - View the HTML layout for or subsection for a web site
 - Copy entire HTML sections and supporting CSS
@@ -88,7 +88,7 @@ If you forget these commands, you can always go to `View > Developer > Developer
 
 #### DevTools Tabs
 
-Overall, there are eight main tools available in the Developer Tools. You may see people with a few more as you can add custom ones using extensions. We won't use all of these tabs during the course and the key ones we will familiarize ourself with are:
+Overall, there are eight main tools available in the Developer Tools. You may see people with a few more as you can add custom chrome extensions. We won't use all of these tabs during the course and the key ones we will familiarize ourself with are:
 
 - **Elements:** Editing Styles And The DOM
 - **Sources:** A graphical interface to the V8 debugger
@@ -96,13 +96,15 @@ Overall, there are eight main tools available in the Developer Tools. You may se
 
 #### Sources Tab
 
-Let's start with the `sources` tab as this contains all the assets that the user will need to view the web site in the browser.
+Let's start with the `sources` tab as this contains all the `ingredients` and supporting assets that the user needs to view the web site in the browser.
 
 <img src="https://i.imgur.com/BVjY2hp.png" width=500/>
 
-What we see is the entire HTML and a styles.css file which currently is empty as no styles were applied to this design.
+What we see are the `index.html` and `styles.css` files. Since this doesn't yet have any custom styling applied that file is  currently is empty.
 
-Now compare that to this students portfolio website: [https://carlynicholson.github.io/portfolio/](https://carlynicholson.github.io/portfolio/). As you can see this site contains more than just HTML but also: CSS & JS.
+Now let's compare that to this portfolio website created by a previous SEIR student: [https://carlynicholson.github.io/portfolio/](https://carlynicholson.github.io/portfolio/). 
+
+As you can see this site contains more than just HTML but also: CSS & JS.
 
 <img src="https://i.imgur.com/XF2VIII.png" width=500/>
 
@@ -115,12 +117,14 @@ Today our focus will be on the `Elements` tab which can be use for a variety of 
 
 Let's revisit the the GA Press Release again and look at it in the elements tab:
 
-<img src="https://i.imgur.com/Ek9ok8M.png" width=500/>
+<img src="https://i.imgur.com/9GkcYAm.png" width=500/>
+
+As we can see there are many elements being used to define, not only the content, but also to create the entire HTML structure. 
 
 ### HTML Pages
 
 A web page is defined in an HTML document, ending with the extension `.html`.
-But an HTML pages is more than just an `.html` extension. It also need the basic structure that defines an HTML document.
+But an HTML pages is more than just an `.html` extension. It also needs several elements that defines it as an HTML document.  
 
 ```html
 <!DOCTYPE html>
@@ -133,14 +137,20 @@ But an HTML pages is more than just an `.html` extension. It also need the basic
 </html>
 ```
 
+ The main elements are:
+
+- `html`
+- `head`
+- `body`
+
+
 **Review Questions:**
 
 <details>
  <br>
   <summary>Does this look familiar, from the prework?</summary>
   It should! But if it doesn't, that's alright. Know that this is the
-  boilerplate for just about every HTML document. Read more about it <a
-  href="http://htmlshell.com/">here</a>
+  boilerplate for just about every HTML document. 
 
 </details>
   <br>
@@ -149,10 +159,7 @@ But an HTML pages is more than just an `.html` extension. It also need the basic
 
   <summary>What does <code>!DOCTYPE html</code> do?</summary>
 
-<code>!DOCTYPE html</code> declares that the document is an HTML document. This
-is largely vestigial but necessary and not worth worrying about at the moment
-beyond knowing it is necessary.
-
+<code>!DOCTYPE html</code> declares that the document is an HTML5 document. Previous versions of HTML used a slightly different syntax. 
 </details>
   <br>
 <details>
@@ -170,19 +177,7 @@ document. The closing <code>html</code> tag should be the last line of the page.
   <summary>What information goes inside of the <code>head</code> tag? What about
   the <code>body</code> tag?</summary>
 
-The <code>head</code> element holds metadata about the document; metadata
-meaning extra information about the document beyond the content of the document.
-
-One required piece of metadata is the <code>title</code> element. Every page is
-required to have a title; without one the HTML document is invalid. The title
-element defines what shows up in the browser window, what the page is called
-when added to favorites/bookmarks, and what the page is titled in search-engine
-results.
-
-The <code>meta</code> element declares that the charset or set of characters
-used in this document is <code>utf-8</code> which includes most characters from
-all known human languages. This is not required but can avoid some problems you
-might run into if you use special characters.
+The <code>head</code> element holds metadata about the document and imports supporting css and js.
 
 The <code>body</code> element is for the contents of our document. We're going
 to write our own HTML between the opening and closing <code>body</code> tag.
@@ -253,10 +248,7 @@ a closing tag; some elements are made with _self-closing_ tags such as an `img`
 #### Attributes
 
 The code snippet above includes two HTML attributes: the `src` and `alt`.
-Attributes are for data that describes the tag. So for an `img` tag, the `src`
-attributes tells the browser the source of the image we want to display.
-Attributes are not unique to self closing tags! That is, both self-closing and
-non-self-closing tags can have attributes:
+Attributes are essentially properties that are assigned data . So for an `img` tag, the `src`attribute tells the browser the source of the image we want to display. Some elements contain unique attributes that are only associated with them and other attributes that can be used by any elements. 
 
 ```html
 <a href="http://www.google.com">Google</a>
@@ -281,11 +273,11 @@ Let's take a look at [W3Schools](https://www.w3schools.com/tags/ref_byfunc.asp) 
 
 Don't worry about memorizing any of these (unless you want to). Instead, learn them as you go!
 
-**Mockup To Web Page**
-
-Examine the below mockup and see if we can come up with a few HTML elements that would lend themselves for this design.
+### From Mockup To Web Page
 
 **Activity**
+
+Examine the below mockup and see if we can come up with a few HTML elements that would lend themselves for this design.
 
 For this exercise you will be placed in breakout rooms for 10-15min. Deliverable are:
 
@@ -305,24 +297,24 @@ HTML for a common piece of a webpage: a header navigation.
 The exercise we're going to work through together is [in this
 repository](https://git.generalassemb.ly/dc-wdi-fundamentals/nav-bar) -->
 
-Together we will create the design in the above mockup. Although we will be using VSCode for the majority of the class for this particular exercise we will use a CodePen as this will allow for easy sharing and troubleshooting.
+Together we will create the design in the above mockup using HTML & CSS. Although we will be using VSCode for the majority of the class for this particular exercise we will use a `CodePen` as this will allow for easy sharing and troubleshooting.
 
 [Smile-Give-Love Starter CodePen](https://codepen.io/jkeohan/pen/WNwwdaE)
 
 ### HTML Boilerplate
 
-The first thing to do is to add the HTML boilerplate. Now since every web site requires a basic HTML template CodePen provides a shortcut to create that:
+The first thing to do is to add the HTML boilerplate. Since every web site requires a basic HTML template CodePen provides a shortcut to create that:
 
 `! + tab` = `Default HTML Structure`
 
 #### Head
 
-The head element holds metadata about the document; metadata meaning extra information about the document beyond the content of the document. The import tags to note here are:
+The head element contains several tags that either provide additional information about the site or are used to link to additional supporting files. The tags that are imported by default are:
 
 - `title`
 - `meta`
 
-One required piece of metadata is the `title` element. The title element defines what shows up in the browser tab and what the page is titled in search-engine results.
+The title element defines what shows up in the browser tab and what the page is titled in search-engine results.
 
 The 2 `meta` tags added by default are:
 
@@ -338,7 +330,9 @@ The 2 `meta` tags added by default are:
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
-Once you start investigating other web sites you will see just how much meta tags are used. Let's quickly looks at [https://mars.nasa.gov/](https://mars.nasa.gov/) in DevTools. Below is just a snapshot of what was in the head so keep in mind that the head tag contains essential info regarding the site as well as it's success at being returned via a search engine.
+Once you start investigating other web sites you will see just how many meta tags are needed to describe the web site.  
+
+Let's quickly looks at [https://mars.nasa.gov/](https://mars.nasa.gov/) in DevTools. Below is just a snapshot of what was in the head and as we can see it contains essential info regarding the site which are used by search engines to determine the relevancy of the site. 
 
 <img src="https://i.imgur.com/af6nLm4.png" width=500/>
 
@@ -994,3 +988,12 @@ And we also want to create space between the grouping of large and small text an
 And our final design
 
 <img src="https://i.imgur.com/LtHyegy.png" width=300/>
+
+
+### Additional Resources
+
+- [The Difference Between Id-and-Class](https://css-tricks.com/the-difference-between-id-and-class/)
+- [Margin vs Padding](https://medium.com/frontendshortcut/margin-vs-padding-c1fc8ea8bfaf)
+- [Taming Advanced CSS Selectors](https://www.smashingmagazine.com/2009/08/taming-advanced-css-selectors/)
+- [How to use HTML5 Sectioning Elements](https://blog.teamtreehouse.com/use-html5-sectioning-elements)
+- [How To Use The Header Tags: SEO Best Practices](https://www.searchenginejournal.com/on-page-seo/header-tags/#close)
