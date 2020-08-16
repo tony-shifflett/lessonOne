@@ -363,23 +363,21 @@ The `article` tag is part of a larger grouping of HTML elements called `Semantic
 
 #### Semantic HTML
 
-Besides the basic elements new [semantic HTML elements](https://www.w3schools.com/html/html5_semantic_elements.asp) were introduced in HTMLv5. You will be using many of these elements extensively week as web build out larger sites as they represent the basic structure of a web site.
+New [semantic HTML elements](https://www.w3schools.com/html/html5_semantic_elements.asp) were introduced in HTMLv5. You will be using many of these elements extensively in the weeks to come as we the we build web sties that contain more content and require additional layers of structure. 
 
 <img src="https://i.imgur.com/QgtlbjQ.png" width=400>
 
 ### CSS (Cascading Style Sheets)
 
-Now onto the fun stuff...CSS. We use CSS to tell browsers how we would like for them to style the elements of our document.
+Now onto the fun stuff...`CSS`. 
 
-### Websites
+### Comparing Websites Designs
 
-So far the design we've created has no CSS and is a little plain and boring.
+So far the design we've created has no CSS and is no better then a plain text file. 
 
 #### Beautiful Designs
 
-Let's take a look at the true power of css and what it can do by visiting:
-
-[CSS Zen Garden](http://www.csszengarden.com)
+Let's take a look at the true power of css and what it can do by visiting: [CSS Zen Garden](http://www.csszengarden.com).  This site provides developers static HTML content which they are not allowed to edit but have the freedom to use CSS in any capacity to implement their own design for the content. 
 
 #### Not So Beautiful Design
 
@@ -387,7 +385,9 @@ It goes without saying that not everyone has the eye for design and it seems the
 
 ### Basic CSS
 
-The first thing you should learn to do when you first start working with a design is to put borders around everything. That way you can see an elements dimensions and how its relation to the other elements.
+The first thing you should learn to do when you first start working with a design is to put borders around everything. That way you can see an elements dimensions and how its position relates to the other elements around it.
+
+**Target Single Elements**
 
 Now we could target both the `article` and `p` tag separately as such:
 
@@ -403,14 +403,17 @@ p {
 
 <img src="https://i.imgur.com/xkQpybu.png" width=400>
 
+**Grouping**
+
 Or we could target both elements by grouping them. This way we can limit the amount of css we write as well as make it much easier to change one rule which then updates multiple elements.
 
 ```css
-article,
-p {
+article, p {
   border: 1px solid;
 }
 ```
+
+**CSS Wild Card**
 
 Our last option is to use the `wildcard` and target all elements as sooner or later grouping 5, 10, 20 elements might not be realistic so let's go with that option for now.
 
@@ -422,7 +425,7 @@ We also highly suggest you take this approach this week as you work through assi
 }
 ```
 
-**Q:** But wait...what additional element have we targeted?
+**Q:** But wait...it seems that we have now added border around some additional elements? what additional elements are they?
 
 #### Dimensions (Width & Height)
 
@@ -513,6 +516,7 @@ article {
 These settings can be combined is so many different ways and the [CSS Font Sytle Generator](https://html-css-js.com/css/generator/font/) tool allows you to do just that.
 
 ### Changing CSS in DevTools
+
 
 Before we go one add additional CSS to complete the design let's try modifying and editing the existing CSS in dev tools. It's where we can explore different CSS settings and see what works, after which we can apply them in the CSS file.
 
@@ -963,16 +967,7 @@ We can do the same for `GIVE` but `LOVE` will need just a little bit more help g
 
 #### Finishing Touches
 
-Looks like were almost there. First let's remove the border and assign the following color to the p elements and lets decrease the font size.
-
-```css
-p {
-  color: #eae3d9;
-  font-size: 25px;
-}
-```
-
-And we also want to create space between the grouping of large and small text and for that we are going to edit the HTML to add <br> tags.
+Let's create space between the grouping of large and small text and for that we are going to edit the HTML to add <br> tags.
 
 ```html
   <article>
@@ -985,9 +980,31 @@ And we also want to create space between the grouping of large and small text an
   </article>
 ```
 
-And our final design
+Let's now remove the border and assign the following color to the p elements and lets decrease the font size.
 
-<img src="https://i.imgur.com/LtHyegy.png" width=300/>
+```css
+p {
+  color: #eae3d9;
+  font-size: 25px;
+}
+```
+
+And perhaps assign a different font family to the key words.
+
+```css
+span {
+  /*  additional css  */
+  font-family: fantasy;
+}
+```
+
+### Final Design
+
+Congratulations!! You've created your very first Instagram Quote.  Needless to say that there are several online tools that allow you to create the same design with to little to no learning curve.  
+
+The advantages however of learning to use HTML & CSS to create a one off piece of art now provide you the skills to create full blow website with much more complexity in layout and design. 
+
+<img src="https://i.imgur.com/hbhAaiP.png" width=300/>
 
 
 ### Additional Resources
