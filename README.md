@@ -1,5 +1,13 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
+---
+Title: Introduction to HTML & CSS<br>
+Duration: 120min+<br>
+Competencies: Basic familiarity with HTML/CSS<br>
+Prerequisites: Prework<br>
+
+---
+
 # Intro to HTML & CSS
 
 Our first official forray in to the world of web development will be to learn
@@ -395,7 +403,7 @@ The `article` tag is part of a larger grouping of HTML elements called `Semantic
 
 New [semantic HTML elements](https://www.w3schools.com/html/html5_semantic_elements.asp) were introduced in HTMLv5. You will be using many of these elements extensively in the weeks to come as we the we build apps that contain more content and require additional layers of structure.
 
-<img src="https://i.imgur.com/QgtlbjQ.png" width=500>
+<img src="https://i.imgur.com/QgtlbjQ.png" width=00>
 
 The amount of elements might seem overwhelming but here is a chart that helps walk you through the decision process:
 
