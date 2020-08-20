@@ -43,10 +43,14 @@ text meaning. You can see what we mean by comparing a document containing plain 
 
 <img src="https://i.imgur.com/p9t0Rfs.png" />
 
-**Activity**
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity
 
 - Take a moment to examine the site and based on what you know about creating documents in general think of at least 3 of the types of content you see.
 - You will be asked to post your thoughts in a slack thread they create.
+
+<hr>
 
 **Activity Recap**
 
@@ -66,7 +70,7 @@ As we can see the same theme images are used that are used to convey GA is a com
 
 One of the main tools that front end developers use to investigate web sites in order to inspect their structure and css is Chrome Developer Tools or DevTools for short.
 
-Although DevTools provides a list of tools to work with we will mainly use ti for the following:  
+Although DevTools provides a list of tools to work with we will mainly use ti for the following:
 
 - View the HTML layout for or subsection for a web site
 - Copy entire HTML sections and supporting CSS
@@ -100,9 +104,9 @@ Let's start with the `sources` tab as this contains all the `ingredients` and su
 
 <img src="https://i.imgur.com/BVjY2hp.png" width=500/>
 
-What we see are the `index.html` and `styles.css` files. Since this doesn't yet have any custom styling applied that file is  currently is empty.
+What we see are the `index.html` and `styles.css` files. Since this doesn't yet have any custom styling applied that file is currently is empty.
 
-Now let's compare that to this portfolio website created by a previous SEIR student: [https://carlynicholson.github.io/portfolio/](https://carlynicholson.github.io/portfolio/). 
+Now let's compare that to this portfolio website created by a previous SEIR student: [https://carlynicholson.github.io/portfolio/](https://carlynicholson.github.io/portfolio/).
 
 As you can see this site contains more than just HTML but also: CSS & JS.
 
@@ -119,12 +123,12 @@ Let's revisit the the GA Press Release again and look at it in the elements tab:
 
 <img src="https://i.imgur.com/9GkcYAm.png" width=500/>
 
-As we can see there are many elements being used to define, not only the content, but also to create the entire HTML structure. 
+As we can see there are many elements being used to define, not only the content, but also to create the entire HTML structure.
 
 ### HTML Pages
 
 A web page is defined in an HTML document, ending with the extension `.html`.
-But an HTML pages is more than just an `.html` extension. It also needs several elements that defines it as an HTML document.  
+But an HTML pages is more than just an `.html` extension. It also needs several elements that defines it as an HTML document.
 
 ```html
 <!DOCTYPE html>
@@ -137,12 +141,11 @@ But an HTML pages is more than just an `.html` extension. It also needs several 
 </html>
 ```
 
- The main elements are:
+The main elements are:
 
 - `html`
 - `head`
 - `body`
-
 
 **Review Questions:**
 
@@ -150,7 +153,7 @@ But an HTML pages is more than just an `.html` extension. It also needs several 
  <br>
   <summary>Does this look familiar, from the prework?</summary>
   It should! But if it doesn't, that's alright. Know that this is the
-  boilerplate for just about every HTML document. 
+  boilerplate for just about every HTML document.
 
 </details>
   <br>
@@ -159,7 +162,8 @@ But an HTML pages is more than just an `.html` extension. It also needs several 
 
   <summary>What does <code>!DOCTYPE html</code> do?</summary>
 
-<code>!DOCTYPE html</code> declares that the document is an HTML5 document. Previous versions of HTML used a slightly different syntax. 
+<code>!DOCTYPE html</code> declares that the document is an HTML5 document. Previous versions of HTML used a slightly different syntax.
+
 </details>
   <br>
 <details>
@@ -248,7 +252,7 @@ a closing tag; some elements are made with _self-closing_ tags such as an `img`
 #### Attributes
 
 The code snippet above includes two HTML attributes: the `src` and `alt`.
-Attributes are essentially properties that are assigned data . So for an `img` tag, the `src`attribute tells the browser the source of the image we want to display. Some elements contain unique attributes that are only associated with them and other attributes that can be used by any elements. 
+Attributes are essentially properties that are assigned data . So for an `img` tag, the `src`attribute tells the browser the source of the image we want to display. Some elements contain unique attributes that are only associated with them and other attributes that can be used by any elements.
 
 ```html
 <a href="http://www.google.com">Google</a>
@@ -273,21 +277,43 @@ Let's take a look at [W3Schools](https://www.w3schools.com/tags/ref_byfunc.asp) 
 
 Don't worry about memorizing any of these (unless you want to). Instead, learn them as you go!
 
-### From Mockup To Web Page
+### From Mockup To Implementation
 
-**Activity**
+As a developer it's your job to build the product based on design mockups. The UX team that worked on those mockups have done their due diligence and choose specific elements, color, placement based on hours of research and user testing.
 
-Examine the below mockup and see if we can come up with a few HTML elements that would lend themselves for this design.
+Although we don't have a team of designers on hand we can rebuild something that is already beautifully designed. Being that you ae just starting out with `html/css` it's best to focus on small and build up and out from there. One activity that I find myself doing is rebuilding a previous Instagram quote.
 
-For this exercise you will be placed in breakout rooms for 10-15min. Deliverable are:
+Here are a few examples that have also been posted here: [newbieandthepro](https://www.instagram.com/newbieandthepro/)
 
-- Discuss with your peers what elements could be used to create the design
-- Create a code snippet that outlines the elements and structure
+<img src="https://i.imgur.com/bfu1Jld.jpg" width=500/>
+<br>
+<br>
+
+<hr>
+
+### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity
+
+Examine the below mockup and see if you and your peers can come up with a few HTML elements that would lend themselves for the design.
+
+<img src="https://i.imgur.com/W9gR63z.png"  width=400/>
+
+For this activity you will be placed in breakout rooms for `10-15min` where you will discuss with your peers the following:
+
+- What elements could be used to implement the design?
+- What parent and child elements would be best suited?
+- How would you target the three keywords of Smile, Give, Love?
+
+Deliverables are:
+
+- Update this [CodePen](https://codepen.io/jkeohan/pen/WNwwdaE) with the design decided upon by the group
+- Click on the thumbs up posted in slack when you believe you are done
 - When you return you will be asked to post that info in a slack thread
+
+**Note:** There is no need to style the elements at this time. This activity is meant to have you think about only which elements could be used to implement such a basic design.
 
 `Breakout Rooms Activate!!! ==>`
 
-<img src="https://i.imgur.com/W9gR63z.png"  width=400/>
+<hr>
 
 ## Implementing a Design
 
@@ -299,7 +325,11 @@ repository](https://git.generalassemb.ly/dc-wdi-fundamentals/nav-bar) -->
 
 Together we will create the design in the above mockup using HTML & CSS. Although we will be using VSCode for the majority of the class for this particular exercise we will use a `CodePen` as this will allow for easy sharing and troubleshooting.
 
-[Smile-Give-Love Starter CodePen](https://codepen.io/jkeohan/pen/WNwwdaE)
+Fork this Codpen if you haven't already done so: [Smile-Give-Love Starter CodePen](https://codepen.io/jkeohan/pen/WNwwdaE)
+
+#### Starting Over
+
+As painful as it might sound delete any previous code that you and your team came up with as we will be building this design during the lecture and those elements have already been decided.
 
 ### HTML Boilerplate
 
@@ -330,9 +360,9 @@ The 2 `meta` tags added by default are:
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
-Once you start investigating other web sites you will see just how many meta tags are needed to describe the web site.  
+Once you start investigating other web sites you will see just how many meta tags are needed to describe the web site.
 
-Let's quickly looks at [https://mars.nasa.gov/](https://mars.nasa.gov/) in DevTools. Below is just a snapshot of what was in the head and as we can see it contains essential info regarding the site which are used by search engines to determine the relevancy of the site. 
+Let's quickly looks at [https://mars.nasa.gov/](https://mars.nasa.gov/) in DevTools. Below is just a snapshot of what was in the head and as we can see it contains essential info regarding the site which are used by search engines to determine the relevancy of the site.
 
 <img src="https://i.imgur.com/af6nLm4.png" width=500/>
 
@@ -363,21 +393,25 @@ The `article` tag is part of a larger grouping of HTML elements called `Semantic
 
 #### Semantic HTML
 
-New [semantic HTML elements](https://www.w3schools.com/html/html5_semantic_elements.asp) were introduced in HTMLv5. You will be using many of these elements extensively in the weeks to come as we the we build web sties that contain more content and require additional layers of structure. 
+New [semantic HTML elements](https://www.w3schools.com/html/html5_semantic_elements.asp) were introduced in HTMLv5. You will be using many of these elements extensively in the weeks to come as we the we build apps that contain more content and require additional layers of structure.
 
-<img src="https://i.imgur.com/QgtlbjQ.png" width=400>
+<img src="https://i.imgur.com/QgtlbjQ.png" width=500>
+
+The amount of elements might seem overwhelming but here is a chart that helps walk you through the decision process:
+
+<img src="https://i.imgur.com/UgON884.png" width=700/>
 
 ### CSS (Cascading Style Sheets)
 
-Now onto the fun stuff...`CSS`. 
+Now onto the fun stuff...`CSS`.
 
 ### Comparing Websites Designs
 
-So far the design we've created has no CSS and is no better then a plain text file. 
+So far the design we've created has no CSS and is no better then a plain text file.
 
 #### Beautiful Designs
 
-Let's take a look at the true power of css and what it can do by visiting: [CSS Zen Garden](http://www.csszengarden.com).  This site provides developers static HTML content which they are not allowed to edit but have the freedom to use CSS in any capacity to implement their own design for the content. 
+Let's take a look at the true power of css and what it can do by visiting: [CSS Zen Garden](http://www.csszengarden.com). This site provides developers static HTML content which they are not allowed to edit but have the freedom to use CSS in any capacity to implement their own design for the content.
 
 #### Not So Beautiful Design
 
@@ -408,7 +442,8 @@ p {
 Or we could target both elements by grouping them. This way we can limit the amount of css we write as well as make it much easier to change one rule which then updates multiple elements.
 
 ```css
-article, p {
+article,
+p {
   border: 1px solid;
 }
 ```
@@ -425,7 +460,7 @@ We also highly suggest you take this approach this week as you work through assi
 }
 ```
 
-**Q:** But wait...it seems that we have now added border around some additional elements? what additional elements are they?
+**Q:** But wait...it seems that we have now added border around some additional elements? What additional elements are they?
 
 #### Dimensions (Width & Height)
 
@@ -478,17 +513,17 @@ This delves a bit further into a larger topic of the `display` property and how 
 - inline
 - inline-block
 
-This is where DevTools comes in really handy. It allows us to look at all the properties and values assigned to elements. So in DevTool highlight and element and on the right side click on `Computed` and `display`
+This is where DevTools comes in really handy. It allows us to look at all the properties and values assigned to elements. So in DevTool highlight and element and on the right side click on `Computed` and type `display`
 
 <img src="https://i.imgur.com/hZLP0ad.png" />
 
-Going into the differences between these properties is a much larger discussion which will be discussed in another lecture so for now just know the following:
+Going into the differences between these properties is a much larger discussion which will be discussed in another lecture but for now just know the following:
 
-- block - takes up entire width of horizontal space
-- inline - takes up only the space it needs and will sit next to other inline elements.
+- block - takes up entire width of horizontal space and can be assigned height, width, margin
+- inline - takes up only the space it needs, shares horizontal space with other elements and cannot be assigned width, height, or margin (top or bottom)
 - inline-block - best of both wolds
 
-So with our spans in place let's target them in CSS. This time were also going to add `font-weight`, `text-transform` and color.
+So with our spans in place let's target them in CSS. This time were also going to add `font-weight`, `text-transform` and `color`.
 
 ```css
 span {
@@ -501,7 +536,7 @@ span {
 
 <img src="https://i.imgur.com/k6UDHDD.png" width=400/>
 
-The last few settings related to the text will be applied to the the article element.
+The last few settings related to text will be applied to the the article element.
 
 ```css
 article {
@@ -517,8 +552,7 @@ These settings can be combined is so many different ways and the [CSS Font Sytle
 
 ### Changing CSS in DevTools
 
-
-Before we go one add additional CSS to complete the design let's try modifying and editing the existing CSS in dev tools. It's where we can explore different CSS settings and see what works, after which we can apply them in the CSS file.
+Before we go on and add additional CSS to complete the design let's try modifying and editing the existing CSS in dev tools. It's the best tool available where we can explore different CSS settings, see what works and then add them in the CSS file.
 
 #### Exploring Additional Font Colors
 
@@ -532,7 +566,7 @@ Let's target all spans for now and click on the color. This should open up a con
 
 <img src="https://i.imgur.com/Y7qrEp3.png" width=200/>
 
-Notice how DevTools has converted the named color `salmon` into it's hex color of `#fa8072`. All named colors have a corresponding hex equivalent but not vice versa as hex provides over 16 million possible options while named only 140.
+Notice how DevTools has converted the named color `salmon` into it's hex color of `#fa8072`. All named colors have a corresponding hex equivalent but not vice versa as hex provides over 16 million+ possible options while named only [140](https://www.w3schools.com/colors/colors_names.asp).
 
 #### Finding The Right Color
 
@@ -542,7 +576,14 @@ In the final design `SMILE` is assigned a unique shade of purple.
 
 <br>
 
-**Activity:** Play with the color wheel and see if you find an exact match and post your finding in the slack thread provided by the instructor.
+<hr>
+
+### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity
+
+- Play with the color wheel and see if you find an exact match
+- When asked post your finding in the slack thread provided by the instructor.
+
+<hr>
 
 I'm sure some of you got pretty close and maybe even nailed the exact color. But for the same of matching the design exactly try using the following hex: `#c99cd5`
 
@@ -552,7 +593,13 @@ Once installed it will add a dropper icon to your chrome extensions and with it 
 
 <img src="https://i.imgur.com/9Ta7oRQ.png"  width=200/>
 
-**Activity:** So with our new tool pick the two additional colors we need for the design and post your finding in the slack thread provided by the instructor.
+<hr>
+
+### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity
+
+ So with our new tool pick the two additional colors we need for the design and post your finding in the slack thread provided by the instructor.
+
+ <hr>
 
 <details>
 <summary>Fulll Color Palette Colors</summary>
@@ -582,9 +629,14 @@ p:first-of-type span {
 
 That should do it.
 
-**Q:** How do we target the second p and for the record there is no `:second-of-type`.
+<hr>
 
-**Activity:** Take a moment experiment with some of the pseudo-classes and see if you can target just the second keyword `GIVE`.
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity
+
+- Take a moment experiment with some of the pseudo-classes and see if you can target just the second keyword `GIVE`.
+- For the record there is no `:second-of-type` pseudo-class
+
+<hr>
 
 <details>
 <summary>Solution</summary>
@@ -828,11 +880,17 @@ article {
 
 <img src="https://i.imgur.com/EPzqY9K.jpg" width=300/>
 
-Not quite what we had in mind. It seems the most important part of the image isn't being displayed. This is because the background images apply their full dimensions to an element and since the picture was rather long vertically the rest of the image is cut off.
+Not quite what we had in mind. It seems the most important part of the image isn't being displayed. This is because background images start from the top left and apply their full dimensions to an element.  Since the actual container is much smaller the image itself much of the image is being cut off. 
 
-**Q:** Which background property do you think would work here?
 
-**Activity:** Review the documention for that property and see if you can use it to place the bouquet of flowers where they need to be.
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity
+
+- Review the documentation for the `background `property
+- See if you can determine which property can be used to place the bouquet of flowers where they need to be.
+
+<hr>
 
 <details>
 <summary>Solution</summary>
@@ -866,6 +924,25 @@ The properties that define the box model are:
 - Border - A border that goes around the padding and content
 - Margin - Clears an area outside the border. The margin is transparent
 
+#### Padding vs Margin
+
+One of the biggest questions, as per the box model, is when do we make the decision to use padding vs margin.
+
+<img src="https://i.imgur.com/nktoFfe.png" width=500/>
+
+They both are used to create gaps around elements, but they differ in their method of creating that gap. Margin accommodates the gap by pushing adjacent elements away from it, while Padding accommodates the gap by either growing its own size or by shrinking the size of content inside it.
+
+Use Padding when:
+
+- You don't want the content to touch the edges of the container
+- You want the background of the element to be displayed
+- You want to increase the size of an element that perhaps can't be assigned width or height like a button
+
+Use Margin when:
+
+- You want to create space around the elements
+- You want to center aan element using `margin:auto`
+
 #### Padding
 
 Padding is used to create space within an element. Let's take a look at developer tools and examine the final live version of the Instagram quote and see if we can determine what padding has been defined.
@@ -880,7 +957,28 @@ If you also click on the `Computed` tab you will see all the dimensions applied 
 
 <img src="https://i.imgur.com/in2ijbp.png" width=300/>
 
-So let's apply the padding to the article
+Before we apply the padding let's consider our options on how to use the padding property to apply it.  Since padding surrounds the element it makes sense that we could target padding for left, right, top, bottom.
+
+**The Really Long Way**
+
+It's possible to target all those dimensions of padding by writing it this way.
+
+```css
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 55px;
+padding-bottom: 55px
+```
+
+**Much better**
+
+Although a much better way to write the above would be to target top/bottom and left/right together since they have the same values. 
+
+```css
+padding: 10px 55px
+```
+
+Of course were all about efficiency and that is how we are going to add our padding.
 
 ```css
 article {
@@ -912,9 +1010,16 @@ Were going to use margin to fix this.
 
 #### Margin
 
-The CSS margin properties are used to create space around elements, outside of any defined borders. They can be used to push away from another element or pull toward it.
+The CSS margin properties are used to create space around elements, outside of any defined borders. They can be used to push away from another element or pull toward it and use the same sub properties as padding (left/right/top/bottom).
 
-**Q:** Examine the p tags in DevTools and determine if margin is being applied to them and, if so, from where?
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity
+
+- Examine the `p tags` in DevTools
+- Determine if margin is being applied to them, and if so, from where?
+
+<hr>
 
 <details>
 <summary>Answer</summary>
@@ -925,7 +1030,7 @@ It's coming from the default CSS that is applied right from the start without us
 </details>
 <br>
 
-Lets remove all that margin.
+Lets remove all that default margin that we never added in the first place. 
 
 ```css
 p {
@@ -948,7 +1053,7 @@ Now let's use margin to move the text into place. We will start with `SMILE` and
 
 <img src="https://i.imgur.com/Bz1IQJj.png" width=300/>
 
-We can do the same for `GIVE` but `LOVE` will need just a little bit more help getting into place.
+Adding `100xp` to `GIVE` will also do the trick but `LOVE`  will needs just a little more push in the right direction to get it into place.
 
 ```css
 .give {
@@ -967,7 +1072,7 @@ We can do the same for `GIVE` but `LOVE` will need just a little bit more help g
 
 #### Finishing Touches
 
-Let's create space between the grouping of large and small text and for that we are going to edit the HTML to add <br> tags.
+Let's create space between the grouping of large and small text and for that we are going to edit the HTML to add break (`<br`) tags.  We could opt to tweak additional css but this represents a good opportunity to introduce a new tag. 
 
 ```html
   <article>
@@ -980,7 +1085,13 @@ Let's create space between the grouping of large and small text and for that we 
   </article>
 ```
 
-Let's now remove the border and assign the following color to the p elements and lets decrease the font size.
+Let's comment out the border 
+
+```css
+/* * { border: 1px solid} */
+```
+
+And assign the following color to the p elements.  Also lets decrease the font size a bit. 
 
 ```css
 p {
@@ -989,7 +1100,7 @@ p {
 }
 ```
 
-And perhaps assign a different font family to the key words.
+Perhaps we should assign a different font family to the key words to make them stand out. 
 
 ```css
 span {
@@ -1000,12 +1111,11 @@ span {
 
 ### Final Design
 
-Congratulations!! You've created your very first Instagram Quote.  Needless to say that there are several online tools that allow you to create the same design with to little to no learning curve.  
+Congratulations!! You've created your very first Instagram Quote. Needless to say that there are several online tools that allow you to create the same design with to little to no learning curve.
 
-The advantages however of learning to use HTML & CSS to create a one off piece of art now provide you the skills to create full blow website with much more complexity in layout and design. 
+The advantages however of learning to use HTML & CSS to create a one off piece of art now provide you the skills to create full blow website with much more complexity in layout and design.
 
 <img src="https://i.imgur.com/hbhAaiP.png" width=300/>
-
 
 ### Additional Resources
 
