@@ -315,7 +315,7 @@ Deliverables are:
 
 - Update this [CodePen](https://codepen.io/jkeohan/pen/WNwwdaE) with the design decided upon by the group
 - Click on the thumbs up posted in slack when you believe you are done
-- When you return you will be asked to post that info in a slack thread
+- When you return you will be asked to post the html in a slack thread as a code snippet
 
 **Note:** There is no need to style the elements at this time. This activity is meant to have you think about only which elements could be used to implement such a basic design.
 
