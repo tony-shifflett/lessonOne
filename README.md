@@ -72,7 +72,7 @@ Now take that same content, add some css and you can make it come to life. The f
 
 As we can see the same theme images are used that are used to convey GA is a company about education. Also the GA logo itself has been used in several place to remind the reader this is a GA press release.
 
-<img src="https://i.imgur.com/XFdK0wr.png" width=500/>
+<img src="https://i.imgur.com/XFdK0wr.png" width=700/>
 
 ### Investigating Web Sites Using Chrome Dev Tools
 
@@ -185,7 +185,7 @@ document. The closing <code>html</code> tag should be the last line of the page.
 </details>
   <br>
 <details>
-
+  <br>
   <summary>What information goes inside of the <code>head</code> tag? What about
   the <code>body</code> tag?</summary>
 
