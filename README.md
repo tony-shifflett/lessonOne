@@ -333,7 +333,7 @@ repository](https://git.generalassemb.ly/dc-wdi-fundamentals/nav-bar) -->
 
 Together we will create the design in the above mockup using HTML & CSS. Although we will be using VSCode for the majority of the class for this particular exercise we will use a `CodePen` as this will allow for easy sharing and troubleshooting.
 
-Fork this Codpen if you haven't already done so: [Smile-Give-Love Starter CodePen](https://codepen.io/jkeohan/pen/WNwwdaE)
+Fork this CodePen (if you haven't already done so) [Smile-Give-Love Starter CodePen](https://codepen.io/jkeohan/pen/WNwwdaE)
 
 #### Starting Over
 
