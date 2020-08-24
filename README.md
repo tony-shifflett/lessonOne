@@ -285,6 +285,17 @@ Let's take a look at [W3Schools](https://www.w3schools.com/tags/ref_byfunc.asp) 
 
 Don't worry about memorizing any of these (unless you want to). Instead, learn them as you go!
 
+#### Search Engine Optimization (SEO) Tags
+
+Beside using the tags we just previously discussed, Front End Developers also have to keep in mind how best to implement SEO.  We won't be delving into SEO in this class and once you are able to build scalable/responsive web apps you will have time to focus on how best to leverage the following tags for SEO
+
+- Meta
+- Title
+- Header
+- H1
+
+Aa good article has been provided in the references section if you'd like to learn more. 
+
 ### From Mockup To Implementation
 
 As a developer it's your job to build the product based on design mockups. The UX team that worked on those mockups have done their due diligence and choose specific elements, color, placement based on hours of research and user testing.
@@ -1132,3 +1143,4 @@ The advantages however of learning to use HTML & CSS to create a one off piece o
 - [Taming Advanced CSS Selectors](https://www.smashingmagazine.com/2009/08/taming-advanced-css-selectors/)
 - [How to use HTML5 Sectioning Elements](https://blog.teamtreehouse.com/use-html5-sectioning-elements)
 - [How To Use The Header Tags: SEO Best Practices](https://www.searchenginejournal.com/on-page-seo/header-tags/#close)
+- [HTML Tags for SEO](https://neilpatel.com/blog/html-tags-for-seo/)
