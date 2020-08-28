@@ -1,6 +1,7 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 ---
+
 Title: Introduction to HTML & CSS<br>
 Duration: 120min+<br>
 Competencies: Basic familiarity with HTML/CSS<br>
@@ -141,11 +142,11 @@ But an HTML pages is more than just an `.html` extension. It also needs several 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>This is the title</title>
-  </head>
-  <body></body>
+	<head>
+		<meta charset="utf-8" />
+		<title>This is the title</title>
+	</head>
+	<body></body>
 </html>
 ```
 
@@ -205,10 +206,10 @@ Sites are a combination of different layouts that require several layers of nest
 
 ```html
 <section>
-  <p>
-    Something about news:
-    <a href="http://www.cnn.com">CNN</a>
-  </p>
+	<p>
+		Something about news:
+		<a href="http://www.cnn.com">CNN</a>
+	</p>
 </section>
 ```
 
@@ -287,14 +288,14 @@ Don't worry about memorizing any of these (unless you want to). Instead, learn t
 
 #### Search Engine Optimization (SEO) Tags
 
-Beside using the tags we just previously discussed, Front End Developers also have to keep in mind how best to implement SEO.  We won't be delving into SEO in this class and once you are able to build scalable/responsive web apps you will have time to focus on how best to leverage the following tags for SEO
+Beside using the tags we just previously discussed, Front End Developers also have to keep in mind how best to implement SEO. We won't be delving into SEO in this class and once you are able to build scalable/responsive web apps you will have time to focus on how best to leverage the following tags for SEO
 
 - Meta
 - Title
 - Header
 - H1
 
-Aa good article has been provided in the references section if you'd like to learn more. 
+Aa good article has been provided in the references section if you'd like to learn more.
 
 ### From Mockup To Implementation
 
@@ -393,12 +394,12 @@ Let's add the following content to the body:
 
 ```html
 <article>
-  <p>smile...</p>
-  <p>more than you cry.</p>
-  <p>give...</p>
-  <p>more than you take.</p>
-  <p>love...</p>
-  <p>more than you hate.</p>
+	<p>smile...</p>
+	<p>more than you cry.</p>
+	<p>give...</p>
+	<p>more than you take.</p>
+	<p>love...</p>
+	<p>more than you hate.</p>
 </article>
 ```
 
@@ -446,11 +447,11 @@ Now we could target both the `article` and `p` tag separately as such:
 
 ```css
 article {
-  border: 1px solid;
+	border: 1px solid;
 }
 
 p {
-  border: 1px solid;
+	border: 1px solid;
 }
 ```
 
@@ -463,7 +464,7 @@ Or we could target both elements by grouping them. This way we can limit the amo
 ```css
 article,
 p {
-  border: 1px solid;
+	border: 1px solid;
 }
 ```
 
@@ -475,7 +476,7 @@ We also highly suggest you take this approach this week as you work through assi
 
 ```css
 * {
-  border: 1px solid;
+	border: 1px solid;
 }
 ```
 
@@ -487,8 +488,8 @@ The dimensions of the container are clearly outlined in the mockup so let's appl
 
 ```css
 article {
-  width: 500px;
-  height: 360px;
+	width: 500px;
+	height: 360px;
 }
 ```
 
@@ -500,8 +501,8 @@ Let's add the font to all the `p` elements.
 
 ```css
 p {
-  font-size: 25px;
-  font-family: cursive;
+	font-size: 25px;
+	font-family: cursive;
 }
 ```
 
@@ -513,12 +514,12 @@ Let's add our spans.
 
 ```html
 <article>
-  <p><span>smile...</span></p>
-  <p>more than you cry.</p>
-  <p><span>give... </span></p>
-  <p>more than you take.</p>
-  <p><span>love... </span></p>
-  <p>more than you hate.</p>
+	<p><span>smile...</span></p>
+	<p>more than you cry.</p>
+	<p><span>give... </span></p>
+	<p>more than you take.</p>
+	<p><span>love... </span></p>
+	<p>more than you hate.</p>
 </article>
 ```
 
@@ -546,10 +547,10 @@ So with our spans in place let's target them in CSS. This time were also going t
 
 ```css
 span {
-  font-size: 35px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: salmon;
+	font-size: 35px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: salmon;
 }
 ```
 
@@ -559,9 +560,9 @@ The last few settings related to text will be applied to the the article element
 
 ```css
 article {
-  text-align: right;
-  letter-spacing: 1.5px;
-  line-height: 1;
+	text-align: right;
+	letter-spacing: 1.5px;
+	line-height: 1;
 }
 ```
 
@@ -616,7 +617,7 @@ Once installed it will add a dropper icon to your chrome extensions and with it 
 
 ### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity
 
- So with our new tool pick the two additional colors we need for the design and post your finding in the slack thread provided by the instructor.
+So with our new tool pick the two additional colors we need for the design and post your finding in the slack thread provided by the instructor.
 
  <hr>
 
@@ -642,7 +643,7 @@ Let's try with pseudo-classes first. Pseudo-classes are used to apply settings b
 
 ```css
 p:first-of-type span {
-  color: #c99cd5;
+	color: #c99cd5;
 }
 ```
 
@@ -662,11 +663,11 @@ That should do it.
 
 ```css
 p:nth-of-type(3) span {
-  color: #b1a983;
+	color: #b1a983;
 }
 
 p:nth-child(3) span {
-  color: #b1a983;
+	color: #b1a983;
 }
 ```
 
@@ -677,15 +678,15 @@ Ok so let's work with the above solution and apply one to the keyword `GIVE` and
 
 ```css
 p:first-of-type span {
-  color: #c99cd5;
+	color: #c99cd5;
 }
 
 p:nth-of-type(3) span {
-  color: #b1a983;
+	color: #b1a983;
 }
 
 p:nth-child(5) span {
-  color: #7fac8b;
+	color: #7fac8b;
 }
 ```
 
@@ -712,15 +713,15 @@ Now let's target those classes in CSS.
 
 ```css
 .smile {
-  color: #b1a983;
+	color: #b1a983;
 }
 
 .give {
-  color: #b1a983;
+	color: #b1a983;
 }
 
 .love {
-  color: #7fac8b;
+	color: #7fac8b;
 }
 ```
 
@@ -728,11 +729,11 @@ We shouldn't see any change at this point as the previous pseudo-class rule decl
 
 ```css
 p:first-of-type span {
-  color: #b1a983;
+	color: #b1a983;
 }
 
 .smile {
-  color: #b1a983;
+	color: #b1a983;
 }
 ```
 
@@ -740,11 +741,11 @@ In order to test things out let's change the color of `p:first-of-type span` to 
 
 ```css
 p:first-of-type span {
-  color: red;
+	color: red;
 }
 
 .smile {
-  color: #b1a983;
+	color: #b1a983;
 }
 ```
 
@@ -764,11 +765,11 @@ But if add some additional elements we can even the playing field.
 
 ```css
 p:first-of-type span {
-  color: red;
+	color: red;
 }
 
 p.smile span {
-  color: #b1a983;
+	color: #b1a983;
 }
 ```
 
@@ -782,11 +783,11 @@ So if we move `p.smile span` above the other rule than it will take affect.
 
 ```css
 p.smile span {
-  color: #b1a983;
+	color: #b1a983;
 }
 
 p:first-of-type span {
-  color: red;
+	color: red;
 }
 ```
 
@@ -808,15 +809,15 @@ p:nth-child(5) span {
 } */
 
 .smile {
-  color: #c99cd5;
+	color: #c99cd5;
 }
 
 .give {
-  color: #b1a983;
+	color: #b1a983;
 }
 
 .love {
-  color: #7fac8b;
+	color: #7fac8b;
 }
 ```
 
@@ -826,9 +827,9 @@ If you remember we initially assigned all spans a color of salmon and of course 
 
 ```css
 span {
-  font-size: 35px;
-  font-weight: 600;
-  text-transform: uppercase;
+	font-size: 35px;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 ```
 
@@ -857,21 +858,20 @@ If we add an image tag to our design then it would require many more CSS setting
 
 ```html
 <article>
-  <img src="" alt="image" />
-  <p class="smile"><span>smile...</span></p>
+	<img src="" alt="image" />
+	<p class="smile"><span>smile...</span></p>
 </article>
 ```
 
 If we add just an empty image then we can already see that it has an effect on the current content.
 
-<img src="https://i.imgur.com/K1rsfoN.png" width=200/>
 
 Let's even go so far as to add the actual background image and see what it would do. For simplicity just copy the below img tag and paste into your HTML.
 
 ```html
 <img
-  src="https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-  alt="image"
+	src="https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+	alt="image"
 />
 ```
 
@@ -893,14 +893,13 @@ Since we are applying an image it seems that `background-image` might be the way
 
 ```css
 article {
-  background-image: url("https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	background-image: url('https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
 }
 ```
 
 <img src="https://i.imgur.com/EPzqY9K.jpg" width=300/>
 
-Not quite what we had in mind. It seems the most important part of the image isn't being displayed. This is because background images start from the top left and apply their full dimensions to an element.  Since the actual container is much smaller the image itself much of the image is being cut off. 
-
+Not quite what we had in mind. It seems the most important part of the image isn't being displayed. This is because background images start from the top left and apply their full dimensions to an element. Since the actual container is much smaller the image itself much of the image is being cut off.
 
 <hr>
 
@@ -916,8 +915,8 @@ Not quite what we had in mind. It seems the most important part of the image isn
 
 ```css
 article {
-  background-image: url("https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-  background-position: 0px -400px;
+	background-image: url('https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+	background-position: 0px -400px;
 }
 ```
 
@@ -976,7 +975,7 @@ If you also click on the `Computed` tab you will see all the dimensions applied 
 
 <img src="https://i.imgur.com/in2ijbp.png" width=300/>
 
-Before we apply the padding let's consider our options on how to use the padding property to apply it.  Since padding surrounds the element it makes sense that we could target padding for left, right, top, bottom.
+Before we apply the padding let's consider our options on how to use the padding property to apply it. Since padding surrounds the element it makes sense that we could target padding for left, right, top, bottom.
 
 **The Really Long Way**
 
@@ -986,27 +985,27 @@ It's possible to target all those dimensions of padding by writing it this way.
 padding-left: 10px;
 padding-right: 10px;
 padding-top: 55px;
-padding-bottom: 55px
+padding-bottom: 55px;
 ```
 
 **Much better**
 
-Although a much better way to write the above would be to target top/bottom and left/right together since they have the same values. 
+Although a much better way to write the above would be to target top/bottom and left/right together since they have the same values.
 
 ```css
-padding: 10px 55px
+padding: 10px 55px;
 ```
 
 Of course were all about efficiency and that is how we are going to add our padding.
 
 ```css
 article {
-  border: 1px solid black;
-  width: 500px;
-  height: 360px;
-  background-image: url(https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-  background-position: 0px -400px;
-  padding: 55px 10px;
+	border: 1px solid black;
+	width: 500px;
+	height: 360px;
+	background-image: url(https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+	background-position: 0px -400px;
+	padding: 55px 10px;
 }
 ```
 
@@ -1016,8 +1015,8 @@ This setting allows us to include the padding and border in an element's total w
 
 ```css
 * {
-  border: 1px solid;
-  box-sizing: border-box;
+	border: 1px solid;
+	box-sizing: border-box;
 }
 ```
 
@@ -1049,13 +1048,13 @@ It's coming from the default CSS that is applied right from the start without us
 </details>
 <br>
 
-Lets remove all that default margin that we never added in the first place. 
+Lets remove all that default margin that we never added in the first place.
 
 ```css
 p {
-  font-size: 20px;
-  font-family: cursive;
-  margin: 0;
+	font-size: 20px;
+	font-family: cursive;
+	margin: 0;
 }
 ```
 
@@ -1065,14 +1064,14 @@ Now let's use margin to move the text into place. We will start with `SMILE` and
 
 ```css
 .smile {
-  color: #c99cd5;
-  margin-right: 100px;
+	color: #c99cd5;
+	margin-right: 100px;
 }
 ```
 
 <img src="https://i.imgur.com/Bz1IQJj.png" width=300/>
 
-Adding `100xp` to `GIVE` will also do the trick but `LOVE`  will needs just a little more push in the right direction to get it into place.
+Adding `100xp` to `GIVE` will also do the trick but `LOVE` will needs just a little more push in the right direction to get it into place.
 
 ```css
 .give {
@@ -1091,7 +1090,7 @@ Adding `100xp` to `GIVE` will also do the trick but `LOVE`  will needs just a li
 
 #### Finishing Touches
 
-Let's create space between the grouping of large and small text and for that we are going to edit the HTML to add break (`<br`) tags.  We could opt to tweak additional css but this represents a good opportunity to introduce a new tag. 
+Let's create space between the grouping of large and small text and for that we are going to edit the HTML to add break (`<br`) tags. We could opt to tweak additional css but this represents a good opportunity to introduce a new tag.
 
 ```html
   <article>
@@ -1104,27 +1103,27 @@ Let's create space between the grouping of large and small text and for that we 
   </article>
 ```
 
-Let's comment out the border 
+Let's comment out the border
 
 ```css
 /* * { border: 1px solid} */
 ```
 
-And assign the following color to the p elements.  Also lets decrease the font size a bit. 
+And assign the following color to the p elements. Also lets decrease the font size a bit.
 
 ```css
 p {
-  color: #eae3d9;
-  font-size: 25px;
+	color: #eae3d9;
+	font-size: 25px;
 }
 ```
 
-Perhaps we should assign a different font family to the key words to make them stand out. 
+Perhaps we should assign a different font family to the key words to make them stand out.
 
 ```css
 span {
-  /*  additional css  */
-  font-family: fantasy;
+	/*  additional css  */
+	font-family: fantasy;
 }
 ```
 
@@ -1138,6 +1137,7 @@ The advantages however of learning to use HTML & CSS to create a one off piece o
 
 ### Additional Resources
 
+- [When Do I Use Background vs Img Tag](https://buildawesomewebsites.com/html-img-vs-css-background-image/)
 - [The Difference Between Id-and-Class](https://css-tricks.com/the-difference-between-id-and-class/)
 - [Margin vs Padding](https://medium.com/frontendshortcut/margin-vs-padding-c1fc8ea8bfaf)
 - [Taming Advanced CSS Selectors](https://www.smashingmagazine.com/2009/08/taming-advanced-css-selectors/)
