@@ -1189,6 +1189,18 @@ The advantages however of learning to use HTML & CSS to create a one off piece o
 
 <img src="https://i.imgur.com/hbhAaiP.png" width=300/>
 
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 10min
+
+- The instructor will spin up a Kahoot and slack out the code to the class
+- You will to to `kahoot.it` and put in the code
+- Play the game by answering the questions to the best of your ability
+
+<hr>
+
+
+
 ### Additional Resources
 
 - [When Do I Use Background vs Img Tag](https://buildawesomewebsites.com/html-img-vs-css-background-image/)
