@@ -384,7 +384,17 @@ The 2 `meta` tags added by default are:
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
-Once you start investigating other web sites you will see just how many meta tags are needed to describe the web site.
+Other important tags that we will add later this week week are:
+
+- link - primarily used to link and import css 
+- script - used to link and import JavaScript 
+
+```html
+<link rel="stylesheet" href="styles.css">
+<script src="app.js"></script>
+```
+
+Once you start investigating other web sites you will see just how many of these tags are needed to support a web site.
 
 <hr>
 
