@@ -3,7 +3,7 @@
 ---
 
 Title: Introduction to HTML & CSS<br>
-Duration: 120min+<br>
+Duration: 3hrs+<br>
 Competencies: Basic familiarity with HTML/CSS<br>
 Prerequisites: Prework<br>
 
