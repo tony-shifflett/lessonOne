@@ -94,6 +94,8 @@ Although DevTools provides a list of tools to work with we will mainly use it fo
 
 ### Open the DevTools
 
+Let's take a look at this portfolio website created by a previous SEIR student: [https://carlynicholson.github.io/portfolio/](https://carlynicholson.github.io/portfolio/).
+
 To access DevTools use the following command shortcuts:
 
 - `⌘ + ⌥ + i` to open the DevTools on Elements tab
@@ -101,7 +103,7 @@ To access DevTools use the following command shortcuts:
 
 If you forget these commands, you can always go to `View > Developer > Developer Tools`.
 
-Let's take a look at a deployed version of the most basic [GA Press Release](http://press-release-basic.surge.sh) and use DevTools to investigate.
+<!-- deployed version of the most basic [GA Press Release](http://press-release-basic.surge.sh) and use DevTools to investigate. -->
 
 #### DevTools Tabs
 
@@ -110,20 +112,14 @@ Overall, there are eight main tools available in the DevTools. There are also ad
 We won't use all of these tabs during the course and the key ones we will work with with are:
 
 - **Elements** 
-- **Sources** 
 - **Console**
+- **Sources** 
 
 #### Sources Tab
 
 Let's start with the `sources` tab as it contains all the files and supporting assets that the user needs to view the web site in the browser.
 
-<img src="https://i.imgur.com/BVjY2hp.png" width=500/>
-
-What we see are the `index.html` and `styles.css` files. Since this doesn't yet have any custom styling applied that file is currently is empty.
-
-Now let's compare that to this portfolio website created by a previous SEIR student: [https://carlynicholson.github.io/portfolio/](https://carlynicholson.github.io/portfolio/).
-
-As you can see this site contains more than just HTML but also: `CSS & JS`.
+What we see are the `index.html`. `styles.css` and `app.js` files.
 
 <img src="https://i.imgur.com/XF2VIII.png" width=500/>
 
@@ -134,11 +130,7 @@ Today our focus will be on the `Elements` tab which can be use for a variety of 
 - Inspecting the HTML & CSS of a web page
 - Live-editing HTML & CSS on-the-fly
 
-Let's revisit the the GA Press Release again and look at it in the elements tab:
-
-<img src="https://i.imgur.com/9GkcYAm.png" width=500/>
-
-As we can see there are many elements being used to create the entire HTML structure.
+<img src="https://i.imgur.com/0bJiCnz.png" width=300/>
 
 ### HTML Pages
 
@@ -244,7 +236,7 @@ a closing tag; some elements are made with _self-closing_ tags such as an `img`
 <img src="cat.gif" alt="A funny cat gif" />
 ```
 
-<hr>
+<!-- <hr>
 
 ### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - Review Questions
 
@@ -253,19 +245,21 @@ a closing tag; some elements are made with _self-closing_ tags such as an `img`
 - Is this unique to self-closing
   tags?
 
-<hr>
+<hr> -->
 
 #### Attributes
 
 The code snippet above includes two HTML attributes: the `src` and `alt`.
-Attributes are essentially properties that are assigned data . So for an `img` tag, the `src`attribute tells the browser the source of the image we want to display and the `alt` is what's displayed if the images isn't available. 
+Attributes are essentially properties that are assigned data . 
+
+So for an `img` tag, the `src`attribute tells the browser the source of the image we want to display and the `alt` is what's displayed if the images isn't available. 
 
 Below is another example of an element that requires an attribute. 
 
 ```html
 <a href="http://www.google.com">Google</a>
 ```
-
+<!-- 
 <hr>
 
 ### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - Review Questions
@@ -275,7 +269,7 @@ Below is another example of an element that requires an attribute.
 - What is the purpose of `href="http://www.google.com"`?
 - Can you see a pattern in how tags and attributes work?
 
-<hr>
+<hr> -->
 
 #### Common Tags
 
@@ -308,7 +302,7 @@ We won't be delving into SEO in this class and once you are able to build scalab
 
 As a developer it's your job to build the design based on mockups. The UX team that worked on those mockups have done their due diligence in choosing specific elements, layouts and colors based on hours of research and user testing.
 
-Although we don't have a team of designers on hand, we can rebuild something that is already beautifully designed. Being that you ae just starting out with `html/css` it's best to focus on small and build up and out from there. One activity that I enjoy doing is rebuilding previous Instagram quotes.
+Although we don't have a team of designers on hand, we can rebuild something that is already beautifully designed. Being that you are just starting out with `html/css` it's best to focus on small and build up and out from there. One activity that I enjoy doing is rebuilding previous Instagram quotes.
 
 Here are a few examples below and there are several more posted here: [newbieandthepro](https://www.instagram.com/newbieandthepro/)
 
@@ -332,7 +326,7 @@ In the breakout rooms discuss with your peers the following:
 
 Deliverables are:
 
-- Fork and update this CodePen [CodePen](https://codepen.io/jkeohan/pen/WNwwdaE) with the HTML design decided upon by the group
+- Fork this CodePen [CodePen](https://codepen.io/jkeohan/pen/WNwwdaE) and update with the HTML design decided upon by the group
 - Click on the thumbs up posted in slack when you believe you are done
 - When you return you will be asked to post the html in a slack thread as a code snippet
 
@@ -352,7 +346,9 @@ repository](https://git.generalassemb.ly/dc-wdi-fundamentals/nav-bar) -->
 
 Together we will create the design in the above mockup using HTML & CSS. Although we will be using VSCode for the majority of the class for this particular exercise we will use a `CodePen` as this will allow for easy sharing and troubleshooting.
 
-Fork this CodePen (if you haven't already done so): [Smile-Give-Love Starter CodePen](https://codepen.io/jkeohan/pen/WNwwdaE)
+Fork this Starter CodePen (if you haven't already done so): [Smile-Give-Love Starter CodePen](https://codepen.io/jkeohan/pen/WNwwdaE)
+
+Here is the [Solution CodePen](https://codepen.io/jkeohan/live/WNwwdaE)
 
 #### Starting Over
 
@@ -436,7 +432,7 @@ Although `p` tags we are already familiar with, why did we choose an `article` e
 
 ### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-Lets take a look at [W3Schools](https://www.w3schools.com/tags/ref_byfunc.asp) and see what an article represents.
+Lets take a look at [W3Schools](https://www.w3schools.com/tags/tag_article.asp) and see what an article represents.
 
 > The `<article>` tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
 
@@ -521,9 +517,6 @@ We also highly suggest you take this approach anytime you are working on a lab/h
 	border: 1px solid;
 }
 ```
-But wait...it seems that we have now added border around some additional elements?
-
-**Question:**  What additional elements are they?
 
 #### Dimensions (Width & Height)
 
