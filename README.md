@@ -11,7 +11,7 @@ Prerequisites: Prework<br>
 
 # Intro to HTML & CSS
 
-Our first official forray in to the world of web development will be to learn
+Our first official foray in to the world of web development will be to learn
 HTML & CSS. There are three components to every website: `HTML, CSS, and JavaScript`.
 Each `ingredient` has a specific function, for HTML it's the content and
 structure of the webpage and for CSS it's all about styling. They are the the two tools that allow developers the visual content in unique and different ways.
@@ -56,7 +56,8 @@ text meaning. You can see what we mean by comparing a document containing plain 
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-- Take a moment to examine the site and based on what you know about creating documents using MS Word or Google Docs think of at least 3 of the types of content you see.
+- Take a moment to examine the site and based on what you know about creating documents using MS Word or Google Docs
+- Think of at least 3 of the types of content you see.
 - You will be asked to post your thoughts in a slack thread they create.
 
 <hr>
@@ -77,7 +78,9 @@ As we can see the same theme images are used that are used to convey GA is a com
 
 ### Investigating Web Sites Using Chrome DevTools
 
-One of the main tools that front end developers use to investigate web sites in order to inspect html elements and css is Chrome Developer Tools or DevTools for short.
+We will be using `Chrome` as the default browser for the entirety of the cohort so open `Chrome` now. 
+
+One of the main tools that front end developers use to investigate web sites in order to inspect html elements and css is `Chrome Developer Tools` or `DevTools` for short.
 
 Although DevTools provides a list of tools to work with we will mainly use it for the following:
 
@@ -91,14 +94,14 @@ Although DevTools provides a list of tools to work with we will mainly use it fo
 
 ### Open the DevTools
 
-Let's take a look at a deployed version of the most basic [GA Press Release](http://press-release-basic.surge.sh) and use DevTools to investigate.
-
 To access DevTools use the following command shortcuts:
 
 - `⌘ + ⌥ + i` to open the DevTools on Elements tab
 - `⌘ + ⌥ + j` to open the DevTools on the Console tab
 
 If you forget these commands, you can always go to `View > Developer > Developer Tools`.
+
+Let's take a look at a deployed version of the most basic [GA Press Release](http://press-release-basic.surge.sh) and use DevTools to investigate.
 
 #### DevTools Tabs
 
