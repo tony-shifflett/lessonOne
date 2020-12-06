@@ -11,10 +11,15 @@ Prerequisites: Prework<br>
 
 # Intro to HTML & CSS
 
-Our first official foray in to the world of web development will be to learn
-HTML & CSS. There are three components to every website: `HTML, CSS, and JavaScript`.
-Each `ingredient` has a specific function, for HTML it's the content and
-structure of the webpage and for CSS it's all about styling. They are the the two tools that allow developers the visual content in unique and different ways.
+Our first official hands on lecture into the world of web development will be to learn HTML & CSS. There are three components to every website: **HTML, CSS, and JavaScript**.
+
+Each component has a specific function and these two tools that allow developers the visualize content in unique and different ways.
+
+| Component  | Purpose             |
+| ---------- | ------------------- |
+| HTML       | Content & Structure |
+| CSS        | Styling and Layout  |
+| JavaScript | Interactivity       |
 
 ## Prerequisites
 
@@ -29,24 +34,16 @@ By the end of this you should be able to:
 - Target specific HTM elements in CSS and add styling
 - Convert a design/mock up into an HTML document
 
-## Introduction
 
-There are three `ingredients` to every website: HTML, CSS, and JavaScript:
-
-| Ingredient | Purpose             |
-| ---------- | ------------------- |
-| HTML       | Content & Structure |
-| CSS        | Styling and Layout  |
-| JavaScript | Interactivity       |
-
-The focus of this lecture will be on the first two: HTML and CSS.
+The focus of this lecture will be on the first two: **HTML** and **CSS**.
 
 ### Intro To HTML and CSS
 
 #### HTML for Content and Structure
 
-The purpose of HTML is very functional, we want to annotate text to give that
-text meaning. You can see what we mean by comparing a document containing plain content that outlines a GA Press Release and then compare that with the same document written in HTML:
+The purpose of HTML is very functional, we want to annotate text to give that text meaning. 
+
+You can see what we mean by comparing a document containing plain text that outlines a **GA Press Release** and then compare that with the same document written where HTML has been used to convey the meaning of those elements. 
 
 <!-- ![Comparing plain text with HTML](assets/text-v-html.png) -->
 
@@ -56,31 +53,38 @@ text meaning. You can see what we mean by comparing a document containing plain 
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-- Take a moment to examine the site and based on what you know about creating documents using MS Word or Google Docs
-- Think of at least 3 of the types of content you see.
-- You will be asked to post your thoughts in a slack thread they create.
+- Take a moment to examine the [Ga Press Release](https://codepen.io/jkeohan/full/EyyEmX)
+- Based on your previous knowledge of creating documents using MS Word/Google Docs hink of at least 3 of the types of content you see.
+
+You will be asked to post your thoughts :thought_balloon: in a slack thread created by the instructor. 
 
 <hr>
 
 **Activity Recap**
 
-In the plain text example it's hard to visually distinguish the type of content and what it represents. However some content based solely on it's position might indicate what it represents like a list of places in a vertical column. However with just a touch of HTML we can highlight that content and give it some structure that users recognize fairly easily. 
+In the plain text example it's hard to visually distinguish the type of content and what it represents. Some content, based solely on it's position, might provide a clue as what it represents, like a list of places in a vertical column. 
 
-So when someone says HTML is the `structure` of a webpage and is used to organize the `content` that's what they mean!
+<img src="https://i.imgur.com/P9w0jif.png" width=100/>
+
+However with just a touch of HTML we can highlight that content and give it some structure that users recognize fairly easily. 
+
+<img src="https://i.imgur.com/13kAzaE.png" width=100/>
+
+So when we say that HTML is used to  **structure** the **content** that's what they mean!
 
 #### CSS for Styling
 
-Now take that same content, add some css and you can make it come to life. The following versions the press release were created by students just like yourself.
-
-As we can see the same theme images are used that are used to convey GA is a company about education. Also the GA logo itself has been used in several place to remind the reader this is a GA press release.
+Now take that same content, add some css and you can make it come to life. The following versions of the press release were created by students just like yourself!!
 
 <img src="https://i.imgur.com/XFdK0wr.png" width=700/>
 
+As we can see there is an overall theme being to convey GA is an **education** company.  Also the GA logo itself has been used in several place to remind the reader this is a **GA Press Release**.
+
 ### Investigating Web Sites Using Chrome DevTools
 
-We will be using `Chrome` as the default browser for the entirety of the cohort so open `Chrome` now. 
+We will be using **Chrome** as the default browser for the entirety of the cohort so let's open **Chrome** now if you haven't already done so. 
 
-One of the main tools that front end developers use to investigate web sites in order to inspect html elements and css is `Chrome Developer Tools` or `DevTools` for short.
+One of the main tools that front end developers use to investigate web sites in order to inspect html and css is **Chrome Developer Tools** or **DevTools** for short.
 
 Although DevTools provides a list of tools to work with we will mainly use it for the following:
 
@@ -91,17 +95,18 @@ Although DevTools provides a list of tools to work with we will mainly use it fo
 - Run and debug JavaScript
 
 
-
 ### Open the DevTools
 
 Let's take a look at this portfolio website created by a previous SEIR student: [https://carlynicholson.github.io/portfolio/](https://carlynicholson.github.io/portfolio/).
 
-To access DevTools use the following command shortcuts:
+To open DevTools go to: **View > Developer > Developer Tools**.
 
-- `⌘ + ⌥ + i` to open the DevTools on Elements tab
-- `⌘ + ⌥ + j` to open the DevTools on the Console tab
+<img src="https://i.imgur.com/MQJgZQu.png" />
 
-If you forget these commands, you can always go to `View > Developer > Developer Tools`.
+As you can see it also provides access to the following shortcuts:
+
+- **⌘ + ⌥ + i** to open the DevTools on Elements tab
+- **⌘ + ⌥ + j** to open the DevTools on the Console tab
 
 <!-- deployed version of the most basic [GA Press Release](http://press-release-basic.surge.sh) and use DevTools to investigate. -->
 
@@ -109,7 +114,7 @@ If you forget these commands, you can always go to `View > Developer > Developer
 
 Overall, there are eight main tools available in the DevTools. There are also additional extensions that we can install like React DevTools.  
 
-We won't use all of these tabs during the course and the key ones we will work with with are:
+During this Unit we will only focus on the following tabs:
 
 - **Elements** 
 - **Console**
@@ -117,25 +122,35 @@ We won't use all of these tabs during the course and the key ones we will work w
 
 #### Sources Tab
 
-Let's start with the `sources` tab as it contains all the files and supporting assets that the user needs to view the web site in the browser.
+Let's start with the **sources** tab as it contains all the files and supporting assets that have been delivered to your browswer in order to view the web site.
 
-What we see are the `index.html`. `styles.css` and `app.js` files.
+What we see are the **index.html**. **styles.css** and **app.js** files.
 
 <img src="https://i.imgur.com/XF2VIII.png" width=500/>
 
 #### Elements Tab
 
-Today our focus will be on the `Elements` tab which can be use for a variety of tasks:
+Today our focus will be on the **Elements** tab which is most useful for:
 
-- Inspecting the HTML & CSS of a web page
-- Live-editing HTML & CSS on-the-fly
+- Inspecting the HTML elements and structure
+- Inspecting the CSS of each element(s)
+- :fire: Live-editing HTML & CSS on-the-fly
 
 <img src="https://i.imgur.com/0bJiCnz.png" width=300/>
 
 ### HTML Pages
 
-A web page is defined in an HTML document, ending with an `.html` extension .
-But an HTML page is more than just an `.html` extension. It also needs several elements that defines it as an HTML document.
+A web page is defined in an HTML document, ending with an **.html** extension . 
+
+ It also requires several HTML elements that are used to define it as an HTML document and provide support.
+
+The main elements are:
+
+- **DOCTYPE ** - defines which type of HTML. In this case v5
+- **html** - starting/ending tag for all html content
+- **head** - title, meta, script, link tags added here
+- **body** - everything you see on the page
+
 
 ```html
 <!DOCTYPE html>
@@ -147,13 +162,6 @@ But an HTML page is more than just an `.html` extension. It also needs several e
 	<body></body>
 </html>
 ```
-
-The main elements are:
-
-- `DOCTYPE `
-- `html`
-- `head`
-- `body`
 
 **Review Questions:**
 
@@ -188,32 +196,65 @@ The <code>body</code> element is for the contents of our document. We're going
 to write our own HTML between the opening and closing <code>body</code> tag.
 
 </details>
+<br>
+<details>
+  <br>
+  <summary>What information goes inside
+  the <code>body</code> tag?</summary>
+
+The <code>body</code> element is for the contents of our document. We're going
+to write our own HTML between the opening and closing <code>body</code> tag.
+
+</details>
 
 ### Nesting Tags to Build Webpages
 
 So we've discussed tags in isolation and we've discussed the overall webpage as
 a whole. How do the two come together to make a webpage?
 
-Sites are a combination of different layouts that require several layers of nesting.
+Sites are a combination of different layouts that require several elements used for nesting content.
 
 ```html
 <section>
-	<p>
-		Something about news:
-		<a href="http://www.cnn.com">CNN</a>
-	</p>
+ <p>
+  Something about news:
+  <a href="http://www.cnn.com">CNN</a>
+ </p>
 </section>
 ```
+In the above example a **section** element is being used to contain a **p**, which itself contains an **anchor** tag. 
 
-Here a `section` element is being used to contain a `p`, which itself contains an `anchor` tag. 
+It's also quite possible to structure it like so:
+
+```html
+<aside>
+ <span>
+  Something about news:
+  <a href="http://www.cnn.com">CNN</a>
+ </span>
+</aside>
+```
+
+Or perhaps even like this:
+
+```html
+<article>
+ <div>
+  Something about news:
+  <button>
+  	<a href="http://www.cnn.com">CNN</a>
+  </button>
+ </div>
+</article>
+```
+
+Your choice of which structure to use is depenent of what the content represents, where that content will the place and your choice of unique styling. 
 
 ## HTML tags and attributes
 
 The following will all be review from the prework. That's okay though, because
 learning is iterative (meaning each time you review something, you learn
-a little more and you learn it a little deeper).
-
-And besides, if you had to rebuild the prework project from scratch without looking at your previous project how well do you think you would do?
+a little more and learn it a little deeper).
 
 ### Anatomy of a Tag
 
@@ -223,17 +264,24 @@ From the prework, we know that an HTML tag looks like this:
 <p>Content</p>
 ```
 
-The tag in the snippet above has both an opening and a closing tag - a tag that
-marks the beginning of some content and a _separate tag_ that marks the end of
-that content. In this case, the tags mark the begging and ending of a paragraph.
+The tag in the snippet above has both an **opening** and a **closing** tag.  In this case, the tags mark the begging and ending of a paragraph.
+
+<hr>
+
+:question: Do all HTML elements require a closing tag in the format used above, as in  **</p>**?
+
+<hr>
+
 
 #### Self-closing Tags
 
-As we learned in the prework, not all elements are made with an opening and
-a closing tag; some elements are made with _self-closing_ tags such as an `img`
+Not all elements are made with an opening and
+a closing tag; some elements are written with _self-closing_ tags such as an **img** or **link**
 
 ```html
 <img src="cat.gif" alt="A funny cat gif" />
+
+<link rel="shortcut icon" href="favicon.ico"/>
 ```
 
 <!-- <hr>
@@ -241,7 +289,7 @@ a closing tag; some elements are made with _self-closing_ tags such as an `img`
 ### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - Review Questions
 
 - When looking at the snippet, how do we know it's self closing?
-- What is `src="cat.gif"` in relation to the tag? 
+- What is **src="cat.gif"** in relation to the tag? 
 - Is this unique to self-closing
   tags?
 
@@ -249,10 +297,14 @@ a closing tag; some elements are made with _self-closing_ tags such as an `img`
 
 #### Attributes
 
-The code snippet above includes two HTML attributes: the `src` and `alt`.
-Attributes are essentially properties that are assigned data . 
+The code snippets above includes attributes specific to each element:
 
-So for an `img` tag, the `src`attribute tells the browser the source of the image we want to display and the `alt` is what's displayed if the images isn't available. 
+**img**:  the **src** and **alt**<br>
+**link**: the **rel** and **href**
+
+Attributes are essentially properties that are assigned to the element and most often, but not always, contain a value. 
+
+So for an **img** tag, the **src**attribute tells the browser the source of the image we want to display and the **alt** is what's displayed if the images isn't available. 
 
 Below is another example of an element that requires an attribute. 
 
@@ -266,7 +318,7 @@ Below is another example of an element that requires an attribute.
 
 
 - What type of element is this?
-- What is the purpose of `href="http://www.google.com"`?
+- What is the purpose of **href="http://www.google.com"**?
 - Can you see a pattern in how tags and attributes work?
 
 <hr> -->
@@ -290,7 +342,7 @@ Don't worry about memorizing any of these (unless you want to). Instead, learn t
 
 Beside using the tags we just previously discussed, Front End Developers also have to keep in mind how best to implement SEO. 
 
-We won't be delving into SEO in this class and once you are able to build scalable/responsive web apps you will have time to focus on how best to leverage the following tags for SEO
+We won't be delving into SEO in this class but once you are able to build scalable/responsive web apps you  might want to how focus on how best to leverage the following tags for SEO
 
 - Meta
 - Title
@@ -300,15 +352,25 @@ We won't be delving into SEO in this class and once you are able to build scalab
 
 ### From Mockup To Implementation
 
-As a developer it's your job to build the design based on mockups. The UX team that worked on those mockups have done their due diligence in choosing specific elements, layouts and colors based on hours of research and user testing.
+As a developer it's your job to build the design based on mockups. In the real world a UX team would provide the mockups which are the end result of hours of research and user testing.
 
-Although we don't have a team of designers on hand, we can rebuild something that is already beautifully designed. Being that you are just starting out with `html/css` it's best to focus on small and build up and out from there. One activity that I enjoy doing is rebuilding previous Instagram quotes.
+<img src="https://i.imgur.com/tJ2TNQa.png" width=500/>
 
-Here are a few examples below and there are several more posted here: [newbieandthepro](https://www.instagram.com/newbieandthepro/)
+<br>
+<br>
+
+Although we don't have a team of UX designers at our disposal, we can opt to rebuild something that is already beautifully designed. 
+
+### Instagram Quotes
+
+Being that you are just starting out with **html/css** it's best to focus on something small and build up and out from there. One activity that I enjoy doing is rebuilding previous Instagram quotes.
+
+Here are a few examples below and there are several more posted on the [newbieandthepro](https://www.instagram.com/newbieandthepro/).
 
 <img src="https://i.imgur.com/bfu1Jld.jpg" width=500/>
 <br>
-<br>
+
+Here are several more on [Pinterest](https://www.pinterest.com/jkeohan0964/instagram-workshop/) that I've been collecting and look forward to rebuilding when I have the time
 
 <hr>
 
@@ -318,21 +380,28 @@ For this activity you will be placed in breakout rooms and examine the mockup pr
 
 <img src="https://i.imgur.com/W9gR63z.png"  width=400/>
 
-In the breakout rooms discuss with your peers the following:
+In the breakout rooms do the following:
+
+**Discuss** with your peers the following:
 
 - What elements could be used to implement the design?
 - What parent and child elements would be best suited?
-- How would you target the three keywords of `Smile, Give, Love`?
+- How would you target the three keywords of **Smile, Give, Love**?
 
-Deliverables are:
+**Deliverables** are:
 
-- Fork this CodePen [CodePen](https://codepen.io/jkeohan/pen/WNwwdaE) and update with the HTML design decided upon by the group
+- Fork this CodePen [CodePen](https://codepen.io/jkeohan/pen/OJRNErm?editors=1100) and add any of those HTML elments decided upon by the group
+
+**When Complete**
+
 - Click on the thumbs up posted in slack when you believe you are done
-- When you return you will be asked to post the html in a slack thread as a code snippet
+
+
+When you return you will be asked to post the html in a slack thread as a code snippet
 
 **Note:** There is no need to style the elements at this time. This activity is meant to have you think about only which elements could be used to implement such a basic design.
 
-`Breakout Rooms Activate!!! ==>`
+**Breakout Rooms Activate!!! ==>**
 
 <hr>
 
@@ -344,11 +413,11 @@ HTML for a common piece of a webpage: a header navigation.
 The exercise we're going to work through together is [in this
 repository](https://git.generalassemb.ly/dc-wdi-fundamentals/nav-bar) -->
 
-Together we will create the design in the above mockup using HTML & CSS. Although we will be using VSCode for the majority of the class for this particular exercise we will use a `CodePen` as this will allow for easy sharing and troubleshooting.
+Together we will create the design in the above mockup using HTML & CSS. Although we will be using VSCode for the majority of the class for this particular exercise we will use a **CodePen** as this will allow for easy sharing and troubleshooting.
 
-Fork this Starter CodePen (if you haven't already done so): [Smile-Give-Love Starter CodePen](https://codepen.io/jkeohan/pen/WNwwdaE)
+Fork this Starter CodePen (if you haven't already done so): [Smile-Give-Love Starter CodePen](https://codepen.io/jkeohan/pen/OJRNErm?editors=1100)
 
-Here is the [Solution CodePen](https://codepen.io/jkeohan/live/WNwwdaE)
+Here is the [Solution CodePen](https://codepen.io/jkeohan/live/WNwwdaE) we are looking to implement. 
 
 #### Starting Over
 
@@ -358,26 +427,40 @@ As painful as it might sound, delete any previous code that you and your team ca
 
 The first thing to do is to add the HTML boilerplate. Since every web site requires a basic HTML template CodePen provides a shortcut to create that:
 
-`! + tab` = Default HTML Structure
+**! + tab** = Default HTML Structure
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Great Demo on CodePen</title>
+</head>
+<body>
+  
+</body>
+</html>
+```
 
 #### Head
 
 The head element contains several tags that either provide additional information about the site or are used to link to additional supporting files. The tags that are imported by default are:
 
-- `title`
-- `meta`
+- **title**
+- **meta**
 
 The title element defines what shows up in the browser tab and what the page is titled in search-engine results.
 
-The 2 `meta` tags added by default are:
+The 2 **meta** tags added by default are:
 
-- `charset` - set of characters used in this document of which utf-8 includes most characters from all known human languages.
+- **charset** - set of characters used in this document of which utf-8 includes most characters from all known human languages.
 
 ```html
 <meta charset="UTF-8" />
 ```
 
-- `viewport` - sets the width of the area in which the content renders (the viewport) to the width of the device and sets the scale to 1.
+- **viewport** - sets the width of the area (the viewport) in which the content renders to the width of the device and sets the scale to 1.
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -411,22 +494,24 @@ This is essential info regarding the site which is used to support the site and 
 
 #### Body
 
-The body element contains the information actually viewable to the user; it represents the content of the document.
+The body element contains the information actually viewable to the user.
 
 Let's add the following content to the body:
 
 ```html
 <article>
-	<p>smile...</p>
-	<p>more than you cry.</p>
-	<p>give...</p>
-	<p>more than you take.</p>
-	<p>love...</p>
-	<p>more than you hate.</p>
+ <div>
+  <p>smile...</p>
+  <p>more than you cry.</p>
+  <p>give...</p>
+  <p>more than you take.</p>
+  <p>love...</p>
+  <p>more than you hate.</p>
+ </div>
 </article>
 ```
 
-Although `p` tags we are already familiar with, why did we choose an `article` element as the parent?
+Although **p** tags we are already familiar with, why did we choose an **article** element as the parent?
 
 <hr>
 
@@ -434,9 +519,9 @@ Although `p` tags we are already familiar with, why did we choose an `article` e
 
 Lets take a look at [W3Schools](https://www.w3schools.com/tags/tag_article.asp) and see what an article represents.
 
-> The `<article>` tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+> The **<article>** tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
 
-The `article` tag is part of a larger grouping of HTML elements called `Semantic` Elements.
+The **article** tag is part of a larger grouping of HTML elements called **Semantic** Elements.
 
 <hr>
 
@@ -454,7 +539,7 @@ The amount of elements might seem overwhelming but here is a chart that helps wa
 
 ### CSS (Cascading Style Sheets)
 
-Now onto the fun stuff...`CSS`.
+Now onto the fun stuff...**CSS**.
 
 ### Comparing Websites Designs
 
@@ -482,15 +567,15 @@ The first thing you should learn to do when you first start working with a desig
 
 **Target A Single Element**
 
-Now we could target both the `article` and `p` tag separately as such:
+Now we could target both the **article** and **p** tag separately as such:
 
 ```css
 article {
-	border: 1px solid;
+ border: 1px solid;
 }
 
 p {
-	border: 1px solid;
+ border: 1px solid;
 }
 ```
 
@@ -502,19 +587,19 @@ Or we could target both elements by grouping them. This way we can limit the amo
 
 ```css
 article, p {
-	border: 1px solid;
+ border: 1px solid;
 }
 ```
 
 **The Wild Card**
 
-Our last option is to use the `wildcard` and target all elements as grouping 5, 10, 20 elements will not be realistic. 
+Our last option is to use the **wildcard** and target all elements as grouping 5, 10, 20 elements will not be realistic. 
 
 We also highly suggest you take this approach anytime you are working on a lab/hw or even you unit projects. 
 
 ```css
 * {
-	border: 1px solid;
+ border: 1px solid;
 }
 ```
 
@@ -524,8 +609,8 @@ The dimensions of the container are clearly outlined in the mockup so let's appl
 
 ```css
 article {
-	width: 500px;
-	height: 360px;
+ width: 500px;
+ height: 360px;
 }
 ```
 
@@ -533,17 +618,17 @@ article {
 
 Our design incorporates a cursive font with is one of the [5 generic font's](https://www.w3.org/Style/Examples/007/fonts.en.html) available on most browswers.
 
-Let's add a `font-family` and `font-size`  to all the `p` elements:
+Let's add a **font-family** and **font-size**  to all the **p** elements:
 
 ```css
 p {
-	font-size: 25px;
-	font-family: cursive;
+ font-size: 20px;
+ font-family: cursive;
 }
 ```
 **The 3 Main Keywords**
 
-Now let's deal with targeting the 3 main key words. In order to do this were going to edit the HTML and add `span` element around each word.
+Now let's deal with targeting the 3 main key words. In order to do this were going to edit the HTML and add **span** element around each word.
 
 Spans are great for targeting text within a larger block of text. Here is a [good example](https://codepen.io/jkeohan/live/vqpyZG) of doing just that.
 
@@ -551,43 +636,47 @@ Let's add our spans.
 
 ```html
 <article>
-	<p><span>smile...</span></p>
-	<p>more than you cry.</p>
-	<p><span>give... </span></p>
-	<p>more than you take.</p>
-	<p><span>love... </span></p>
-	<p>more than you hate.</p>
+ <p><span>smile...</span></p>
+ <p>more than you cry.</p>
+ <p><span>give... </span></p>
+ <p>more than you take.</p>
+ <p><span>love... </span></p>
+ <p>more than you hate.</p>
 </article>
 ```
 
-**Question:** After we adding the spans what has changed and why?
+<hr>
+**:question::** After adding the spans what has changed in the desing and why?
+<hr>
 
 <img src="https://i.imgur.com/uDu4HkO.png" width=400/>
 
-This delves a bit further into a larger topic of the `display` property and how all elements are assigned one of 3 display properties by default:
+This delves a bit further into a larger topic of the **display** property and how all elements are assigned one of 3 display properties by default:
 
 - block
 - inline
 - inline-block
 
-This is where DevTools comes in really handy. It allows us to look at all the properties and values assigned to elements. So in DevTool highlight and element and on the right side click on `Computed` and type `display`
+This is where **DevTools** comes in really handy. It allows us to look at all the properties and values assigned to elements. So in **DevTool** highlight and element and on the right side click on **Computed** and type **display** in the input box. 
 
 <img src="https://i.imgur.com/hZLP0ad.png" />
 
 Going into the differences between these properties is a much larger discussion which will be discussed in another lecture but for now just know the following:
 
-- block - takes up entire width of horizontal space and can be assigned height, width, margin
-- inline - takes up only the space it needs, shares horizontal space with other elements and cannot be assigned width, height, or margin (top or bottom)
-- inline-block - best of both wolds
+| Value  |      Description             |
+| ---------------- | ------------------- |
+| **block**       | takes up entire width of horizontal space and can be assigned height, width, margin |
+| **inline**       | takes up only the space it needs, shares horizontal space with other elements and cannot be assigned width, height, or margin (top or bottom)  |
+| **inline-block**    | best of both wolds      |
 
 So with our spans in place let's add the following CSS. 
 
 ```css
 span {
-	font-size: 35px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: salmon;
+ font-size: 35px;
+ font-weight: 600;
+ text-transform: uppercase;
+ color: salmon;
 }
 ```
 
@@ -599,9 +688,9 @@ The last few settings are related to text will be applied to the the article ele
 
 ```css
 article {
-	text-align: right;
-	letter-spacing: 1.5px;
-	line-height: 1;
+ text-align: right;
+ letter-spacing: 1.5px;
+ line-height: 1;
 }
 ```
 
@@ -615,21 +704,21 @@ Before we go on and add additional CSS to complete the design let's try modifyin
 
 #### Exploring Additional Font Colors
 
-So let's say we wanted to work through some additional colors and apply them to the spans. In DevTools we would highlight the element and on the `Styles`tab we could select the css rule that targets that element and make the change there.
+So let's say we wanted to work through some additional colors and apply them to the spans. In **DevTools** we would highlight the element and on the **Styles** tab we could select the css rule that targets that element and make the change there.
 
 <img src="https://i.imgur.com/DfHhmZF.png" />
 
-We also might just want to target that specific element only and we could do so using `element.style` and add the rule declaration there.
+We also might just want to target that specific element only and we could do so using **element.style** and add the rule declaration there.
 
 Let's target all spans for now and click on the color. This should open up a control panel where we can explore different colors.
 
 <img src="https://i.imgur.com/Y7qrEp3.png" width=200/>
 
-Notice how DevTools has converted the named color `salmon` into it's hex color of `#fa8072`. All named colors have a corresponding hex equivalent but not vice versa as hex provides over 16 million+ possible options while named only [140](https://www.w3schools.com/colors/colors_names.asp).
+Notice how DevTools has converted the named color **salmon** into it's hex color of **#fa8072**. All named colors have a corresponding hex equivalent but not vice versa as hex provides over 16 million+ possible options while named only [140](https://www.w3schools.com/colors/colors_names.asp).
 
 #### Finding The Right Color
 
-In the final design `SMILE` is assigned a unique shade of purple.
+In the final design **SMILE** is assigned a unique shade of purple.
 
 <img src="https://i.imgur.com/41tQT3A.png" width=200/>
 
@@ -639,16 +728,17 @@ In the final design `SMILE` is assigned a unique shade of purple.
 
 ### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-- Play with the color wheel and see if you find an exact match
-- When asked post your finding in the slack thread provided by the instructor.
+- Play with the color wheel :ferris_wheel: and see if you find a hex color that matches
+
+When asked post your finding in the slack thread provided by the instructor.
 
 <hr>
 
 **ColorZilla**
 
-I'm sure some of you got pretty close and maybe even nailed the exact color. But for the same of matching the design exactly try using the following hex: `#c99cd5`
+I'm sure some of you got pretty close and maybe even nailed the exact color. But for the same of matching the design exactly try using the following hex: **#c99cd5**
 
-Ok so it's an exact match and anytime your working with the UX Designers they will always provide the colors as per the design specs. But what if you saw a color on a site and wanted to know that color exactly. Lucky for use Chrome comes will tons of extensions one of which is: [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en)
+Anytime your working with the UX designers they will always provide the colors as per the design specs. But what if you saw a color on a site and wanted to know that color exactly. Lucky for use Chrome comes will tons of extensions one of which is: [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en)
 
 Once installed it will add a dropper icon to your chrome extensions and with it we can pick a color from a page:
 
@@ -659,7 +749,8 @@ Once installed it will add a dropper icon to your chrome extensions and with it 
 ### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
 - With our new tool pick the two additional colors we need for the design
-- When asked post your finding in the slack thread provided by the instructor.
+
+When asked post your finding in the slack thread provided by the instructor.
 
  <hr>
 
@@ -674,31 +765,36 @@ Once installed it will add a dropper icon to your chrome extensions and with it 
 
 ### Targeting Specific Elements Using Pseudo-Class & Classes
 
-With our color palette in place we are now faced with how to apply those unique colors directly to their corresponding key word. There are several options we can take:
+With our color palette in place we are now faced with how to apply those unique colors directly to their corresponding key word. 
 
-- use [pseudoclasses](https://www.w3schools.com/css/css_pseudo_classes.asp) in css (no need to edit html)
+There are several options we can take:
+
+- use [pseudoclasses](https://www.w3schools.com/css/css_pseudo_classes.asp) in css (no need to edit the html)
 - use classes to target those elements and any others that need that color
 - use id's to target each element individually
 
 #### Pseudo-class
 
-Let's try with pseudo-classes first. Pseudo-classes are used to apply settings based either a state of the elements, such as when a user `hovers` over an element or it's position in the HTML. In order to target `SMILE` we will go the route of selecting it's position and then the span within it.
+**Pseudo-classes** are used to apply settings based either the  state of the elements, such as when a user **hovers** over an element or it's **position** in the HTML. 
+
+In order to target **SMILE** we will go the route of selecting it's position and then the span within it.
 
 ```css
 p:first-of-type span {
-	color: #c99cd5;
+ color: #c99cd5;
 }
 ```
 
-That should do it.
-
 <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-- Take a moment to experiment with some of the pseudo-classes and see if you can target just the second keyword `GIVE`.
-- For the record there is no `:second-of-type` pseudo-class
-- When asked post your finding in the slack thread provided by the instructor.
+- Take a moment to experiment with some of the pseudo-classes and see if you can target just the second keyword **GIVE**.
+
+**Note**: For the record there is no **:second-of-type** pseudo-class
+
+
+When asked post your finding in the slack thread provided by the instructor.
 
 <hr>
 
@@ -711,41 +807,42 @@ There are two possible ways to target that element.
 ```css
 // nth-of-type()
 p:nth-of-type(3) span {
-	color: #b1a983;
+ color: #b1a983;
 }
 
 // nth-child()
 p:nth-child(3) span {
-	color: #b1a983;
+ color: #b1a983;
 }
 ```
-
 </details>
 <br>
 
-Ok so let's work with the above solution and apply one to the keyword `GIVE` and the other to the `LOVE`.
+Ok so let's work with the above solution and apply one to the keyword **GIVE** and the other to the **LOVE**.
 
 ```css
 p:first-of-type span {
-	color: #c99cd5;
+ color: #c99cd5;
 }
 
 p:nth-of-type(3) span {
-	color: #b1a983;
+ color: #b1a983;
 }
 
 p:nth-child(5) span {
-	color: #7fac8b;
+ color: #7fac8b;
 }
 ```
 
-Ok so now that you understand the power of using only CSS to target specific elements let's try the same using `classes`
+Ok so now that you understand the power of using only CSS to target specific elements let's try the same using **classes**
 
 #### Classes
 
-Although the above approach works, colors represent a style that is most often applied to multiple elements on a page, and although we only are targeting those elements we need to think long term and for the growth of our app. So let's take that approach and assign each color a `class` and name the class the keyword.
+Although the above approach works, colors represent a style that is most often applied to multiple elements on a page so we need to think long term growth of our app. 
 
-This requires that we edit the HTML so let's do that first. Since the `p` contains only a single `span` and no additional text we can assign the class to the `p`.
+So let's take that approach and assign each color a **class** and name the class the keyword.
+
+This requires that we edit the HTML so let's do that first. Since the **p** contains only a single **span** and no additional text we can assign the class to the **p**.
 
 ```html
   <article>
@@ -762,41 +859,48 @@ Now let's target those classes in CSS.
 
 ```css
 .smile {
-	color: #b1a983;
+ color: #b1a983;
 }
 
 .give {
-	color: #b1a983;
+ color: #b1a983;
 }
 
 .love {
-	color: #7fac8b;
+ color: #7fac8b;
 }
 ```
 
 We shouldn't see any change at this point as the previous pseudo-class rule declarations are still in effect. 
 
-But the question now is which of the below rules is actually taking affect?
+<hr>
+**:question**: Which of the below rules is actually taking affect and applying the color?
+
+<br>
+<br>
+
+> instructor will add a poll  :white_check_mark: to the slack channel
+<hr>
 
 ```css
 p:first-of-type span {
-	color: #b1a983;
+ color: #b1a983;
 }
 
 .smile {
-	color: #b1a983;
+ color: #b1a983;
 }
 ```
 
-In order to test things out let's change the color of `p:first-of-type span` to be `red` and see if it has any effect.
+In order to test things out let's change the color of **p:first-of-type span** to be **red** and see if it has any effect.
 
 ```css
 p:first-of-type span {
-	color: red;
+ color: red;
 }
 
 .smile {
-	color: #b1a983;
+ color: #b1a983;
 }
 ```
 
@@ -826,19 +930,21 @@ p.smile span {
 
 <img src="https://i.imgur.com/oZ2CvZd.png" width=300/>
 
-Now that we have 2 rules with the same specificity it comes down to when they are read in the CSS. The rule is this:
+Now that we have 2 rules with the same specificity it comes down to when they are read in the CSS. 
+
+The CSS rule to live by is this:
 
 > If two css rules have the same specificity then the last one read will apply
 
-So if we move `p.smile span` above the other rule than it will take affect.
+So if we move **p.smile span** above the other rule than it will take affect.
 
 ```css
 p.smile span {
-	color: #b1a983;
+ color: #b1a983;
 }
 
 p:first-of-type span {
-	color: red;
+ color: red;
 }
 ```
 
@@ -860,27 +966,30 @@ p:nth-child(5) span {
 } */
 
 .smile {
-	color: #c99cd5;
+ color: #c99cd5;
 }
 
 .give {
-	color: #b1a983;
+ color: #b1a983;
 }
 
 .love {
-	color: #7fac8b;
+ color: #7fac8b;
 }
 ```
 
-Ok...what just happened. One minute it was working and the next it's not. Any ideas?
+
+<hr>
+:question: Ok...what just happened. One minute it was working and the next it's not. Any ideas?
+<hr>
 
 If you remember we initially assigned all spans a color of salmon and of course that rule is taking precedence so let's remove it. The span should look like the following:
 
 ```css
 span {
-	font-size: 35px;
-	font-weight: 600;
-	text-transform: uppercase;
+ font-size: 35px;
+ font-weight: 600;
+ text-transform: uppercase;
 }
 ```
 
@@ -892,12 +1001,12 @@ As humans we are a visual species and enjoy looking at things that capture our a
 
 There are two ways to add images:
 
-- `<img>` tag
-- using the `backround-image` property
+- **<img>** tag
+- using the **backround-image** property
 
 #### Image Tags
 
-Images require a `src` with a URL for an image. You should also include an `alt` tag for screen readers, or for when the image isn't available.
+Images require a **src** with a URL for an image. You should also include an **alt** tag for screen readers, or for when the image isn't available.
 
 Images are empty elements meaning that they cannot logically have children. They are represented in HTML with a single, self-closing element.
 
@@ -905,12 +1014,14 @@ Images are empty elements meaning that they cannot logically have children. They
 <img src="" alt="" />
 ```
 
-If we add an image tag to our design then it would require many more CSS settings to work it into place and those settings are lectures all on their own. But let's add an image tag and confirm it's not the way to go.
+If we add an image tag to our design then it would require many more CSS settings to work it into place and those settings are lectures all on their own. 
+
+But let's add an image tag and confirm it's not the way to go.
 
 ```html
 <article>
-	<img src="" alt="image" />
-	<p class="smile"><span>smile...</span></p>
+ <img src="" alt="image" />
+ <p class="smile"><span>smile...</span></p>
 </article>
 ```
 
@@ -923,14 +1034,14 @@ For simplicity just copy the below img tag and paste into your HTML.
 
 ```html
 <img
-	src="https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+ src="https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
 	alt="image"
 />
 ```
 
-As we can see the image has dimensions and takes up width and height. Our design however applies an image as a background so lets set that up. 
+As we can see the image has dimensions and takes up **width** and **height**. Our design however applies an image as a background so lets set that up. 
 
-Go ahead and comment out the image tag for now.
+**Comment out the image tag for now**.
 
 #### Background Images
 
@@ -944,25 +1055,28 @@ CSS provides the [background property](https://www.w3schools.com/cssref/css3_pr_
 - background-size
 - background-repeat
 
-Since we are applying an image it seems that `background-image` might be the way to go.
+Since we are applying an image it seems that **background-image** might be the way to go.
 
 ```css
 article {
-	background-image: url('https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+ background-image: url('https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
 }
 ```
 
 <img src="https://i.imgur.com/EPzqY9K.jpg" width=300/>
 
-Not quite what we had in mind. It seems the most important part of the image isn't being displayed. This is because background images start from the top left and apply their full dimensions to an element. Since the actual container is much smaller the image itself much of the image is being cut off.
+It seems the most important part of the image isn't being displayed. This is because background images start from the top left and apply their full dimensions to an element. 
+
+Since the actual container is much smaller the image itself much of the image is being cut off.
 
 <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 5min
 
-- Review the documentation for the `background `property.
-- Try and determine which property can be used to move the bouquet of flowers.
-- When asked post your finding in the slack thread provided by the instructor.
+- Review the documentation for the **background **property.
+- Apply differrent propertiess and try to determine which property can be used to move the bouquet of flowers.
+
+When asked post your finding in the slack thread provided by the instructor.
 
 <hr>
 
@@ -981,22 +1095,23 @@ article {
 <br>
 <img src="https://i.imgur.com/lhSQkTV.jpg" width=300/>
 
-It seems like all we have left to do is position the text so let's do that.
 
-### Dimensions (Margins)
+### Positioning The Text Using Margins
 
-Earlier in the lesson we added width & height to the article. That locked in the size and made it easier to position the image and now will do the same for the text.
+Earlier in the lesson we added **width & height** to the article. That locked in the size and made it easier to position the image and now will do the same for the text.
 
-A major concept in CSS which encapsulates content, padding, border and margin is called the [Box Model](https://i.imgur.com/xixIhCh.png).
+A major concept in CSS which encapsulates **content, padding, border and margin** is called the [Box Model](https://i.imgur.com/xixIhCh.png).
 
 <img src="https://i.imgur.com/xixIhCh.png" width=500/>
 
 The properties that define the box model are:
 
-- Content - The content of the box, where text and images appear
-- Padding - Clears an area around the content. The padding is transparent
-- Border - A border that goes around the padding and content
-- Margin - Clears an area outside the border. The margin is transparent
+| Property | Purpose             |
+| ---------- | ------------------- |
+| Content      | The content of the box, where text and images appear |
+| Padding        | Clears an area around the content. The padding is transparent  |
+| Border | A border that goes around the padding and content      |
+| Margin | Clears an area outside the border. The margin is transparent     |
 
 #### Padding vs Margin
 
@@ -1017,19 +1132,19 @@ Use Padding when:
 Use Margin when:
 
 - You want to create space around the elements
-- You want to center aan element using `margin:auto`
+- You want to center aan element using **margin:auto**
 
 #### Padding
 
 Padding is used to create space within an element. Let's take a look at developer tools and examine the final live version of the Instagram quote and see if we can determine what padding has been defined.
 
-[Live Instagram Quote](https://codepen.io/jkeohan/live/oNXVowv)
+[Live Instagram Quote](https://codepen.io/jkeohan/live/WNwwdaE)
 
 If you hover over the article element you should the following:
 
 <img src="https://i.imgur.com/MWJbxfC.jpg" width=300/>
 
-If you also click on the `Computed` tab you will see all the dimensions applied to the article
+If you also click on the **Computed** tab you will see all the dimensions applied to the article
 
 <img src="https://i.imgur.com/in2ijbp.png" width=300/>
 
@@ -1058,25 +1173,25 @@ Of course were all about efficiency and that is how we are going to add our padd
 
 ```css
 article {
-	border: 1px solid black;
-	width: 500px;
-	height: 360px;
-	background-image: url(https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-	background-position: 0px -400px;
-	padding: 55px 10px;
+ border: 1px solid black;
+ width: 500px;
+ height: 360px;
+ background-image: url(https://images.unsplash.com/photo-1516452391242-15957b3bb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+ background-position: 0px -400px;
+ padding: 55px 10px;
 }
 ```
 
 What you should immediately notice is that the entire article element just expanded. It seems as though if we add padding that will increase the width and height of an element. 
 
-This obviously can cause issues in our design so we need to fix that by addinng [box-size: border-box](https://www.w3schools.com/css/css3_box-sizing.asp).
+This obviously can cause issues in our design so we need to fix that by adding [box-size: border-box](https://www.w3schools.com/css/css3_box-sizing.asp).
 
 This setting allows us to include the padding and border in an element's total width and height. Since we would like to keep the exact heights and widths defined on all elements we will apply this setting to the wild card.
 
 ```css
 * {
-	border: 1px solid;
-	box-sizing: border-box;
+ border: 1px solid;
+ box-sizing: border-box;
 }
 ```
 
@@ -1088,15 +1203,16 @@ Were going to use margin to fix this.
 
 #### Margin
 
-The CSS margin properties are used to create space around elements, outside of any defined borders. They can be used to push away from another element or pull toward it and use the same sub properties as padding (left/right/top/bottom).
+The CSS margin properties are used to create space around elements, outside of any defined borders. They can be used to push away from another element or pull toward it and use the same sub properties as padding **left/right/top/bottom**.
 
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-- Examine the `p tags` in DevTools
+- Examine the **p tags** in DevTools
 - Determine if margin is being applied to them, and if so, from where?
-- When asked post your finding in the slack thread provided by the instructor.
+
+When asked post your finding in the slack thread provided by the instructor.
 
 <hr>
 
@@ -1113,26 +1229,26 @@ Lets remove all that default margin that we never added in the first place.
 
 ```css
 p {
-	font-size: 20px;
-	font-family: cursive;
-	margin: 0;
+ font-size: 20px;
+ font-family: cursive;
+ margin: 0;
 }
 ```
 
 '<img src="https://i.imgur.com/IaQvWV9.png" width=300/>
 
-Now let's use margin to move the text into place. We will start with `SMILE` and push away from the right side.
+Now let's use margin to move the text into place. We will start with **SMILE** and push away from the right side.
 
 ```css
 .smile {
-	color: #c99cd5;
-	margin-right: 100px;
+  color: #c99cd5;
+  margin-right: 100px;
 }
 ```
 
 <img src="https://i.imgur.com/Bz1IQJj.png" width=300/>
 
-Adding `100xp` to `GIVE` will also do the trick but `LOVE` will needs just a little more push in the right direction to get it into place.
+Adding **100xp** to **GIVE** will also do the trick but **LOVE** will needs just a little more push in the right direction to get it into place.
 
 ```css
 .give {
@@ -1143,7 +1259,7 @@ Adding `100xp` to `GIVE` will also do the trick but `LOVE` will needs just a lit
 
 .love {
   color:#7fac8b;
-  margin-right: 125px;
+  margin-right: 110px;
 }
 ```
 
@@ -1151,17 +1267,17 @@ Adding `100xp` to `GIVE` will also do the trick but `LOVE` will needs just a lit
 
 #### Finishing Touches
 
-Let's create space between the grouping of large and small text and for that we are going to edit the HTML to add break (`<br`) tags. We could opt to tweak additional css but this represents a good opportunity to introduce a new tag.
+Let's create space between the grouping of large and small text and for that we are going to edit the HTML to add break (**<br**) tags. We could opt to tweak additional css but this represents a good opportunity to introduce a new tag.
 
 ```html
-  <article>
-    <p class='smile'><span>smile...</span></p>
-    <p>more than you cry.</p><br>
-    <p class='give'><span>give... </span></p>
-    <p>more than you take.</p><br>
-    <p class='love'><span>love... <span/></p>
-    <p>more than you hate.</p>
-  </article>
+<article>
+ <p class='smile'><span>smile...</span></p>
+ <p>more than you cry.</p><br>
+ <p class='give'><span>give... </span></p>
+ <p>more than you take.</p><br>
+ <p class='love'><span>love... <span/></p>
+ <p>more than you hate.</p>
+</article>
 ```
 
 Let's comment out the border
@@ -1174,7 +1290,7 @@ And assign the following color to the p elements.
 
 ```css
 p {
-	color: #eae3d9;
+ color: #eae3d9;
 }
 ```
 
@@ -1183,7 +1299,7 @@ Perhaps we should assign a different font family to the key words to make them s
 ```css
 span {
 	/*  additional css  */
-	font-family: fantasy;
+ font-family: fantasy;
 }
 ```
 
@@ -1200,8 +1316,11 @@ The advantages however of learning to use HTML & CSS to create a one off piece o
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 10min
 
 - The instructor will spin up a Kahoot and slack out the code to the class
-- You will to to `kahoot.it` and put in the code
+- You will to to **kahoot.it** and put in the code
 - Play the game by answering the questions to the best of your ability
+
+
+<!-- https://play.kahoot.it/v2/?quizId=69f49f80-e195-472e-b05d-bf94e66ce152 -->
 
 <hr>
 
