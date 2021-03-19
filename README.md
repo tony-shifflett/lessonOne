@@ -31,7 +31,7 @@ By the end of this you should be able to:
 
 - Write HTML elements, including tags that are assigned attributes
 - Build out the skeleton for a webpage using the HTML5 boilerplate
-- Target specific HTM elements in CSS and add styling
+- Use CSS to target HTML elements and apply styling
 - Convert a design/mock up into an HTML document
 
 
@@ -43,7 +43,7 @@ The focus of this lecture will be on the first two: **HTML** and **CSS**.
 
 The purpose of HTML is very functional, we want to annotate text to give that text meaning. 
 
-You can see what we mean by comparing a document containing plain text that outlines a **GA Press Release** and then compare that with the same document written where HTML has been used to convey the meaning of those elements. 
+You can see what we mean by comparing a document containing plain text that outlines a **GA Press Release** and then compare that with the same document where HTML has been used to convey the meaning of those elements. 
 
 <!-- ![Comparing plain text with HTML](assets/text-v-html.png) -->
 
@@ -53,8 +53,9 @@ You can see what we mean by comparing a document containing plain text that outl
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-- Take a moment to examine the [Ga Press Release](https://codepen.io/jkeohan/full/EyyEmX)
-- Based on your previous knowledge of creating documents using MS Word/Google Docs hink of at least 3 of the types of content you see.
+- Take a moment to examine the [GA Press Release](hhttps://codepen.io/jkeohan/live/EyKEeL)
+- Based on your previous knowledge of content, in general, think of at least 3 types of content that you see.
+- Instructor will set a timer starting...now
 
 You will be asked to post your thoughts :thought_balloon: in a slack thread created by the instructor. 
 
@@ -66,15 +67,14 @@ In the plain text example it's hard to visually distinguish the type of content 
 
 <img src="https://i.imgur.com/P9w0jif.png" width=100/>
 
-However with just a touch of HTML we can highlight that content and give it some structure that users recognize fairly easily. 
+However with HTML, and a slight touch of CSS, we can structure the content in a way that our end users can easily understand. 
 
-<img src="https://i.imgur.com/13kAzaE.png" width=100/>
+<img src="https://i.imgur.com/p5RcEGv.png" width=400/>
 
-So when we say that HTML is used to  **structure** the **content** that's what they mean!
 
 #### CSS for Styling
 
-Now take that same content, add some css and you can make it come to life. The following versions of the press release were created by students just like yourself!!
+Now take that same content, add some additional css and you can make it come to life. The following versions of the press release were created by students just like yourself!
 
 <img src="https://i.imgur.com/XFdK0wr.png" width=700/>
 
@@ -146,7 +146,7 @@ A web page is defined in an HTML document, ending with an **.html** extension .
 
 The main elements are:
 
-- **DOCTYPE ** - defines which type of HTML. In this case v5
+- **DOCTYPE** - defines which type of HTML. In this case v5
 - **html** - starting/ending tag for all html content
 - **head** - title, meta, script, link tags added here
 - **body** - everything you see on the page
@@ -155,15 +155,15 @@ The main elements are:
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>This is the title</title>
-	</head>
-	<body></body>
+ <head>
+  <meta charset="utf-8" />
+  <title>This is the title</title>
+ </head>
+ <body></body>
 </html>
 ```
 
-**Review Questions:**
+<!-- **Review Questions:**
 
 
 <details>
@@ -205,14 +205,14 @@ to write our own HTML between the opening and closing <code>body</code> tag.
 The <code>body</code> element is for the contents of our document. We're going
 to write our own HTML between the opening and closing <code>body</code> tag.
 
-</details>
+</details> -->
 
 ### Nesting Tags to Build Webpages
 
 So we've discussed tags in isolation and we've discussed the overall webpage as
 a whole. How do the two come together to make a webpage?
 
-Sites are a combination of different layouts that require several elements used for nesting content.
+Sites are a combination of different layouts that use HTML elements to structure the content. 
 
 ```html
 <section>
@@ -268,15 +268,14 @@ The tag in the snippet above has both an **opening** and a **closing** tag.  In 
 
 <hr>
 
-:question: Do all HTML elements require a closing tag in the format used above, as in  **</p>**?
+:question: Do all HTML elements require a closing tag in the example above?
 
 <hr>
 
 
 #### Self-closing Tags
 
-Not all elements are made with an opening and
-a closing tag; some elements are written with _self-closing_ tags such as an **img** or **link**
+Not all elements are made with an opening and a closing tag; some elements are written using _self-closing_ tags such as an **img** or **link**
 
 ```html
 <img src="cat.gif" alt="A funny cat gif" />
@@ -299,8 +298,8 @@ a closing tag; some elements are written with _self-closing_ tags such as an **i
 
 The code snippets above includes attributes specific to each element:
 
-**img**:  the **src** and **alt**<br>
-**link**: the **rel** and **href**
+**img**:  **src** and **alt**<br>
+**link**: **rel** and **href**
 
 Attributes are essentially properties that are assigned to the element and most often, but not always, contain a value. 
 
@@ -376,7 +375,7 @@ Here are several more on [Pinterest](https://www.pinterest.com/jkeohan0964/insta
 
 ### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 10min
 
-For this activity you will be placed in breakout rooms and examine the mockup provided and see if you and your peers can come up with a few HTML elements that might be used to implement the design.
+For this activity you will be placed in breakout rooms to examine the mockup provided. 
 
 <img src="https://i.imgur.com/W9gR63z.png"  width=400/>
 
