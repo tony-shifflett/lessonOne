@@ -770,9 +770,12 @@ When asked post your finding in the slack thread provided by the instructor.
 <summary>Our Full Color Palette</summary>
 <br>
 
+```
 - Smile: #c99cd5
 - Give: #b1a983
 - Love: #7fac8b
+```
+
 </details>
 
 ### Targeting Specific Elements Using Classes & PseudoClass 
